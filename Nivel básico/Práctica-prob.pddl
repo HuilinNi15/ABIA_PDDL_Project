@@ -1,16 +1,17 @@
 (define (problem RoversSuministrosPersonal) (:domain BasesMarte)
-(:objects bases
+    
+    (:objects 
+        bases
         rovers 
         suministros 
         personal
-)
+    )
 
-(:init
+    (:init
 
-)
+    )
 
-(:goal (and
-    ;todo: put the goal condition here
-))
-
+    (:goal (and
+        ;todo: put the goal condition here
+    ))
 )
