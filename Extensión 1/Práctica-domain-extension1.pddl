@@ -17,8 +17,8 @@
         (suministrado ?t - transportable)
 
     (:functions 
-        (capacidad_personal)
-        (capacidad_suministro)
+        (CapacidadPersonal)
+        (CapacidadSuministro)
     )
 
     (:action mover
@@ -30,12 +30,25 @@
         )
     )
 
-    (:action cargar
-        :parameters (?t - transportable ?r - rover ?b - base)
-        :precondition (and (en_base ?t ?b) (aparcado ?r ?b))
+    (:action cargar_personal
+        :parameters (?p - personal ?r - rover ?b - base)
+        :precondition (and 
+                    (en_base ?p ?b) (aparcado ?r ?b)
+                    (> (CapacidadPersonal) 0))
         :effect (and 
-                (en_rover ?t ?r)
-                (not (en_base ?t ?b))
+                (en_rover ?p ?r) (not (en_base ?p ?b))
+                (decrease (CapacidadPersonal) 1)
+        )
+    )
+
+    (:action cargar_suministro
+        :parameters (?s - suministro ?r - rover ?b - base)
+        :precondition (and 
+                    (en_base ?s ?b) (aparcado ?r ?b)
+                    (> (CapacidadSuministro) 0))
+        :effect (and 
+                (en_rover ?t ?r) (not (en_base ?t ?b))
+                (decrease (CapacidadSuministro) 1)
         )
     )
 

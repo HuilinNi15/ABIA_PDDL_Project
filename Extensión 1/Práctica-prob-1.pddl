@@ -9,8 +9,8 @@
     )
 
     (:init
-        (= (capacidad_personal) 2)
-        (= (capacidad_suministro) 1)
+        (= (CapacidadPersonal) 2)
+        (= (CapacidadSuministro) 1)
 
     )
 
