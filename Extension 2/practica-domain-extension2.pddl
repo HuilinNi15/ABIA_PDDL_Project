@@ -1,4 +1,4 @@
-(define (domain BasesMarte_extension3)
+(define (domain BasesMarte_extension2)
 
     (:requirements :adl :fluents)
 
@@ -17,7 +17,7 @@
         (suministrado ?t - transportable)
     )
 
-    (:functions
+    (:functions 
         (personalDisponible)
         (numeroPeticiones)
     )
