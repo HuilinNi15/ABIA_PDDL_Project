@@ -20,8 +20,8 @@
     (:functions 
         (PersonalCargado ?r - rover)
         (SuministroCargado ?r - rover)
-        (p) ;capacidad máxima de personal
-        (s) ;capacidad máxima de suministro
+        (p) ;capacidad máxima de personal por rover
+        (s) ;capacidad máxima de suministro por rover
     )
 
     (:action mover
