@@ -1,4 +1,4 @@
-(define (domain BasesMarte_extension1)
+(define (domain BasesMarte_extension2_1)
 
     (:requirements :adl :typing :fluents)
 
@@ -20,6 +20,8 @@
     (:functions 
         (PersonalCargado ?r - rover)
         (SuministroCargado ?r - rover)
+        (CombustibleUtilizado ?r - rover)
+        (CombustibleTotal)
         (p) ;capacidad máxima de personal por rover
         (s) ;capacidad máxima de suministro por rover
     )
@@ -30,6 +32,8 @@
         :effect (and 
             (aparcado ?r ?des) 
             (not (aparcado ?r ?ori))
+            (increase (CombustibleUtilizado ?r) 1)
+            (increase (CombustibleTotal) 1)
         )
     )
 
