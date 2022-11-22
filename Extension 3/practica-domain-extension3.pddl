@@ -18,8 +18,8 @@
     )
 
     (:functions
-        (personalDisponible)
-        (numeroPeticiones)
+        (PersonalCargado)
+        (SuministroCargado)
     )
 
     (:action action_name
