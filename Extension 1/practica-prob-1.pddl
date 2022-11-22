@@ -11,9 +11,6 @@
     (:init
         (= (CapacidadPersonal) 2)
         (= (CapacidadSuministro) 1)
-
-        
-
     )
 
     (:goal (and ))
