@@ -20,8 +20,8 @@
     (:functions 
         (PersonalCargado ?r - rover)
         (SuministroCargado ?r - rover)
-        (CombustibleUtilizado ?r - rover)
-        (CombustibleTotal)
+        (CombustibleRestante ?r - rover)
+        (CombustibleTotalUtilizado)
         (p) ;capacidad máxima de personal por rover
         (s) ;capacidad máxima de suministro por rover
     )
@@ -32,8 +32,8 @@
         :effect (and 
             (aparcado ?r ?des) 
             (not (aparcado ?r ?ori))
-            (increase (CombustibleUtilizado ?r) 1)
-            (increase (CombustibleTotal) 1)
+            (decrease (CombustibleRestante ?r) 1)
+            (increase (CombustibleTotalUtilizado) 1)
         )
     )
 
