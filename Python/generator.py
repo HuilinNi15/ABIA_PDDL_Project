@@ -12,8 +12,9 @@ class Parameters():
 
 
 class Problem():
-    def __init__(self, level = 'Nivel basico', problem = '1') -> None:
+    def __init__(self, level = 'Nivel basico', domain = 'nivelbasico', problem = '1') -> None:
         self.level = level
+        self.domain = domain
         self.problem = problem
         self.paths = self.find_paths()
 
@@ -27,7 +28,7 @@ class Problem():
         
         path = file_path[:-6].replace('\\', '/')
         executable = path + 'metricff.exe'
-        domain = path + self.level + '/practica-domain-' + self.level.lower().replace(" ", "") + '.pddl'
+        domain = path + self.level + '/practica-domain-' + self.domain + '.pddl'
         problem = path + self.level + '/practica-prob-' + self.problem + '.pddl'
         write_problem = '.' + problem[len(project_path):]
         output = path + r'Python/output.txt'
