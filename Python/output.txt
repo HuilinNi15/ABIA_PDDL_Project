@@ -1,6 +1,6 @@
 
 ff: parsing domain file
-domain 'BASESMARTE_EXTENSION1' defined
+domain 'BASESMARTE_NIVEL_BASICO' defined
  ... done.
 ff: parsing problem file
 problem 'ROVERSSUMINISTROSPERSONAL' defined
@@ -15,41 +15,39 @@ ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(
     metric is  plan length
 
 Cueing down from goal distance:   10 into depth [1]
-                                   9            [1][2]
-                                   8            [1]
-                                   7            [1][2][3]
+                                   9            [1]
+                                   8            [1][2]
+                                   7            [1]
                                    6            [1]
-                                   5            [1]
-                                   4            [1][2]
-                                   3            [1][2]
+                                   5            [1][2][3]
+                                   4            [1]
+                                   3            [1]
                                    2            [1]
                                    1            [1]
                                    0            
 
 ff: found legal plan as follows
 
-step    0: CARGAR_SUMINISTRO PATATA CURIOSITY AL1
-        1: MOVER CURIOSITY AL1 AS1
-        2: DESCARGAR_SUMINISTRO PATATA CURIOSITY AS1
-        3: CARGAR_PERSONAL DOCTOR CURIOSITY AS1
-        4: MOVER CURIOSITY AS1 AL1
-        5: MOVER CURIOSITY AL1 AS2
-        6: DESCARGAR_PERSONAL DOCTOR CURIOSITY AS2
-        7: CARGAR_PERSONAL OCULISTA CURIOSITY AS2
-        8: MOVER CURIOSITY AS2 AL1
-        9: MOVER CURIOSITY AL1 AS1
-       10: DESCARGAR_PERSONAL OCULISTA CURIOSITY AS1
-       11: MOVER CURIOSITY AS1 AL1
-       12: CARGAR_SUMINISTRO ZANAHORIA CURIOSITY AL1
-       13: MOVER CURIOSITY AL1 AS1
-       14: DESCARGAR_SUMINISTRO ZANAHORIA CURIOSITY AS1
+step    0: CARGAR PATATA CURIOSITY AL1
+        1: CARGAR ZANAHORIA CURIOSITY AL1
+        2: MOVER CURIOSITY AL1 AS1
+        3: CARGAR DOCTOR CURIOSITY AS1
+        4: DESCARGAR PATATA CURIOSITY AS1
+        5: DESCARGAR ZANAHORIA CURIOSITY AS1
+        6: MOVER CURIOSITY AS1 AL1
+        7: MOVER CURIOSITY AL1 AS2
+        8: CARGAR OCULISTA CURIOSITY AS2
+        9: DESCARGAR DOCTOR CURIOSITY AS2
+       10: MOVER CURIOSITY AS2 AL1
+       11: MOVER CURIOSITY AL1 AS1
+       12: DESCARGAR OCULISTA CURIOSITY AS1
      
 
-time spent:    0.00 seconds instantiating 18 easy, 0 hard action templates
+time spent:    0.16 seconds instantiating 24 easy, 0 hard action templates
                0.00 seconds reachability analysis, yielding 21 facts and 12 actions
-               0.00 seconds creating final representation with 19 relevant facts, 4 relevant fluents
+               0.00 seconds creating final representation with 19 relevant facts, 0 relevant fluents
                0.00 seconds computing LNF
                0.00 seconds building connectivity graph
-               0.00 seconds searching, evaluating 20 states, to a max depth of 3
-               0.00 seconds total time
+               0.00 seconds searching, evaluating 18 states, to a max depth of 3
+               0.16 seconds total time
 
