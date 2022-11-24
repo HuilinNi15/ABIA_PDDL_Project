@@ -1,22 +1,26 @@
-(define (problem RoversSuministrosPersonal) (:domain BasesMarte_extension2_2)
+(define (problem RoversSuministrosPersonal)
+    (:domain BasesMarte_extension2_2)
 
-    (:objects 
+    (:objects
         as1 as2 - asentamiento
-        al1 - almacen 
+        al1 - almacen
         Curiosity - rover
         zanahoria patata - suministro
         doctor oculista - personal
     )
 
-    (:init 
+    (:init
         (= (p) 2)
         (= (s) 1)
         (= (PersonalCargado Curiosity) 0)
         (= (SuministroCargado Curiosity) 0)
         (= (CombustibleUtilizado Curiosity) 0)
+        (= (CombustibleTotal) 0)
         (aparcado Curiosity al1)
-        (conectado as1 al1) (conectado al1 as1)
-        (conectado as2 al1) (conectado al1 as2)
+        (conectado as1 al1)
+        (conectado al1 as1)
+        (conectado as2 al1)
+        (conectado al1 as2)
         (en_base zanahoria al1)
         (en_base patata al1)
         (en_base doctor as1)
@@ -29,9 +33,13 @@
         (pedido oculista as1)
     )
 
-    (:goal (forall (?t - transportable) (suministrado ?t)))
+    (:goal
+        (forall
+            (?t - transportable)
+            (suministrado ?t))
+    )
 
-    (:metric minimize 
-        (CombustibleTotal)    
+    (:metric minimize
+        (CombustibleTotal)
     )
 )
