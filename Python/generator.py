@@ -37,12 +37,12 @@ class Problem():
         assert self.problem == "custom", "The Problem should be custom"
 
         init = []
+        rand = random.Random(seed)
 
         # ---------------------------------- BASES ----------------------------------
         bases = {}
         warehouses  = []
         settlements = []
-        rand = random.Random(seed)
         for i in map:
             if i[0] not in bases:
                 base = rand.choices(['as', 'al'], weights=[r_map, 1 - r_map], k=1)[0]
@@ -59,15 +59,26 @@ class Problem():
                 else: 
                     settlements.append(bases[i[1]])
             init.append(f'conectado {bases[i[0]]} {bases[i[1]]}')
+        if len(warehouses) > 0: warehouses.append('almacen')
+        if len(settlements) > 0: settlements.append('asentamiento')
 
 
         # ---------------------------------- ROVERS ----------------------------------
         rovers      = []
+        for i in range(n_rovers):
+            rovers.append(f'rover{i}')
+            base = rand.choice(list(bases.keys()))
+            init.append(f'aparcado {rovers[i]} {bases[base]}')
+        rovers.append('rover')
+
         
+        # ------------------------------ TRANSPORTABLES ------------------------------
 
         people      = []
         supplies    = []
-        return [rovers, people, supplies, warehouses, settlements], []
+        
+
+        return [rovers, people, supplies, warehouses, settlements], init
 
 
     def write_param(self, param):
