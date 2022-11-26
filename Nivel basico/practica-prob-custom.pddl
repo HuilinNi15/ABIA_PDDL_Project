@@ -1,4 +1,6 @@
-(define (problem RoversSuministrosPersonal) (:domain BasesMarte_nivel_basico)
+(define (problem RoversSuministrosPersonal) 
+
+    (:domain BasesMarte_nivel_basico)
     
     (:objects 
 
