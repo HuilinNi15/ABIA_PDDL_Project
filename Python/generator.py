@@ -33,8 +33,10 @@ class Problem():
                 'write_problem': write_problem}
 
 
-    def generate_problem(self, n_rovers=1, n_transportables=6, r_transportables=0.5, map=[(1, 2), (2, 3), (3, 4), (4, 1)], r_map=0.5, seed=1234):
+    def generate_problem(self, n_rovers=1, suministros=4, personal=4, map=[(1, 2), (2, 3), (3, 4), (4, 1)], r_map=0.5, seed=1234):
         assert self.problem == "custom", "The Problem should be custom"
+        assert len(map) >= 2, "Map too small"
+        assert suministros > 0 and personal > 0 and n_rovers > 0, "To little supplies"
 
         init = []
         rand = random.Random(seed)
@@ -43,67 +45,108 @@ class Problem():
         bases = {}
         warehouses  = []
         settlements = []
+
         for i in map:
-            if i[0] not in bases:
+            for j in i:
+                if j not in bases:
+                    bases[j] = ""
+
+        minimum = rand.choices(list(bases.keys()), k=3)
+        bases[minimum[0]] = f"as{minimum[0]}"
+        settlements.append(bases[minimum[0]])
+        bases[minimum[1]] = f"as{minimum[1]}"
+        settlements.append(bases[minimum[1]])
+        bases[minimum[2]] = f"al{minimum[2]}"
+        warehouses.append(bases[minimum[2]])
+
+        for i in bases.keys():
+            if bases[i] == "":
                 base = rand.choices(['as', 'al'], weights=[r_map, 1 - r_map], k=1)[0]
-                bases[i[0]] = base + str(i[0])
-                if base == 'as':
-                    warehouses.append(bases[i[0]])
+                bases[i] = base + str(i)
+                if base == 'al':
+                    warehouses.append(bases[i])
                 else: 
-                    settlements.append(bases[i[0]])
-            if i[1] not in bases:
-                base = rand.choices(['as', 'al'], weights=[r_map, 1 - r_map], k=1)[0]
-                bases[i[1]] = base + str(i[1])
-                if base == 'as':
-                    warehouses.append(bases[i[1]])
-                else: 
-                    settlements.append(bases[i[1]])
+                    settlements.append(bases[i])
+
+        for i in map:
             init.append(f'conectado {bases[i[0]]} {bases[i[1]]}')
+            init.append(f'conectado {bases[i[1]]} {bases[i[0]]}')
+        
         if len(warehouses) > 0: warehouses.append('almacen')
         if len(settlements) > 0: settlements.append('asentamiento')
 
-
         # ---------------------------------- ROVERS ----------------------------------
-        rovers      = []
+        rovers = []
         for i in range(n_rovers):
             rovers.append(f'rover{i}')
             base = rand.choice(list(bases.keys()))
             init.append(f'aparcado {rovers[i]} {bases[base]}')
         rovers.append('rover')
 
-        
         # ------------------------------ TRANSPORTABLES ------------------------------
+        people = []
+        for i in range(personal):
+            people.append(f'p{i}')
+            base = rand.choice(settlements[:-1])
+            init.append(f'en_base {people[i]} {base}')
+            base_pedido = rand.choice(settlements[:settlements.index(base)] + settlements[settlements.index(base) + 1:-1])
+            init.append(f'pedido {people[i]} {base_pedido}')
+        people.append('personal')
 
-        people      = []
-        supplies    = []
-        
+        supplies = []
+        for i in range(suministros):
+            supplies.append(f's{i}')
+            base = rand.choice(warehouses[:-1])
+            init.append(f'en_base {supplies[i]} {base}')
+            base_pedido = rand.choice(settlements[:-1])
+            init.append(f'pedido {supplies[i]} {base_pedido}')
+        supplies.append('suministro')
 
         return [rovers, people, supplies, warehouses, settlements], init
 
 
-    def write_param(self, param):
-        string = ""
-        for i in param: 
-            string += i
-        if len(string) > 0:
-            return string
-
     def write_problem(self, objects, init) -> None:
         assert self.problem == "custom", "The Problem should be custom"
-        with open(self.paths['write_problem'], 'r') as f:
-            lines = f.readlines()
 
-        added_lines = []
+        lines = [
+            f'(define (problem RoversSuministrosPersonal) (:domain BasesMarte_{self.domain})\n',
+            '\n',
+            '    (:objects\n'
+        ]
+
+        objects_lines = []
         for i in objects:
             string = "        "
             for j in i[:-1]:
                 string += j + " "
             if len(string) > 0:
                 string += "- " + i[-1] + "\n"
-                added_lines.append(string)
+                objects_lines.append(string)
         
+        lines += objects_lines
+        lines += [
+            '    )\n',
+            '\n',
+            '    (:init\n'
+        ]
+
+        init_lines = []
         for j in init:
-            pass
+            init_lines.append(f'        ({j})\n')
+
+        lines += init_lines
+        lines += [
+            '    )\n',
+            '\n',
+            '    (:goal (forall (?t - transportable) (suministrado ?t)))\n',
+            '\n',
+            ')\n'
+        ]
+
+        input = ""
+        for i in lines:
+            input += i
+        print(input)
 
         with open(self.paths['write_problem'], 'w') as file:
             file.writelines(lines)
@@ -140,3 +183,7 @@ class Problem():
                 if len(line) > 8:
                     line = line[11:-1].split()
                     steps.append(line)
+
+        for i in steps:
+            print(i)
+        print(times)

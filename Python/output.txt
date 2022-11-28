@@ -14,12 +14,21 @@ checking for cyclic := effects --- OK.
 ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
     metric is  plan length
 
-Cueing down from goal distance:   10 into depth [1]
+Cueing down from goal distance:   19 into depth [1]
+                                  18            [1]
+                                  17            [1]
+                                  16            [1]
+                                  15            [1]
+                                  14            [1]
+                                  13            [1][2]
+                                  12            [1][2]
+                                  11            [1]
+                                  10            [1]
                                    9            [1]
-                                   8            [1][2]
+                                   8            [1]
                                    7            [1]
                                    6            [1]
-                                   5            [1][2][3]
+                                   5            [1]
                                    4            [1]
                                    3            [1]
                                    2            [1]
@@ -28,26 +37,34 @@ Cueing down from goal distance:   10 into depth [1]
 
 ff: found legal plan as follows
 
-step    0: CARGAR PATATA CURIOSITY AL1
-        1: CARGAR ZANAHORIA CURIOSITY AL1
-        2: MOVER CURIOSITY AL1 AS1
-        3: CARGAR DOCTOR CURIOSITY AS1
-        4: DESCARGAR PATATA CURIOSITY AS1
-        5: DESCARGAR ZANAHORIA CURIOSITY AS1
-        6: MOVER CURIOSITY AS1 AL1
-        7: MOVER CURIOSITY AL1 AS2
-        8: CARGAR OCULISTA CURIOSITY AS2
-        9: DESCARGAR DOCTOR CURIOSITY AS2
-       10: MOVER CURIOSITY AS2 AL1
-       11: MOVER CURIOSITY AL1 AS1
-       12: DESCARGAR OCULISTA CURIOSITY AS1
+step    0: CARGAR S3 ROVER0 AL1
+        1: CARGAR S2 ROVER0 AL1
+        2: CARGAR S1 ROVER0 AL1
+        3: MOVER ROVER0 AL1 AS2
+        4: CARGAR P1 ROVER0 AS2
+        5: DESCARGAR S3 ROVER0 AS2
+        6: MOVER ROVER0 AS2 AL3
+        7: CARGAR S0 ROVER0 AL3
+        8: MOVER ROVER0 AL3 AS4
+        9: CARGAR P3 ROVER0 AS4
+       10: CARGAR P2 ROVER0 AS4
+       11: CARGAR P0 ROVER0 AS4
+       12: DESCARGAR S2 ROVER0 AS4
+       13: DESCARGAR S1 ROVER0 AS4
+       14: DESCARGAR P1 ROVER0 AS4
+       15: MOVER ROVER0 AS4 AL1
+       16: MOVER ROVER0 AL1 AS2
+       17: DESCARGAR S0 ROVER0 AS2
+       18: DESCARGAR P3 ROVER0 AS2
+       19: DESCARGAR P2 ROVER0 AS2
+       20: DESCARGAR P0 ROVER0 AS2
      
 
-time spent:    0.16 seconds instantiating 24 easy, 0 hard action templates
-               0.00 seconds reachability analysis, yielding 21 facts and 12 actions
-               0.00 seconds creating final representation with 19 relevant facts, 0 relevant fluents
+time spent:    0.00 seconds instantiating 56 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 36 facts and 24 actions
+               0.00 seconds creating final representation with 36 relevant facts, 0 relevant fluents
                0.00 seconds computing LNF
                0.00 seconds building connectivity graph
-               0.00 seconds searching, evaluating 18 states, to a max depth of 3
-               0.16 seconds total time
+               0.00 seconds searching, evaluating 32 states, to a max depth of 2
+               0.00 seconds total time
 
