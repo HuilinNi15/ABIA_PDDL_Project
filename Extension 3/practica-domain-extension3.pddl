@@ -20,9 +20,10 @@
     (:functions
         (PersonalCargado ?r - rover)
         (SuministroCargado ?r - rover)
-        (CombustibleUtilizado ?r - rover)
-        (Priodidad ?id - idpedido)
+        (CombustibleRestante ?r - rover)
+        (DecresimientoCombusitible)
         (CombustibleTotal)
+        (Prioridad ?id - idpedido)
         (AcumPrioridad) ; función que acumula la prioridad de los pedidos que se van entregando
         (p) ;capacidad máxima de personal por rover
         (s) ;capacidad máxima de suministro por rover
@@ -30,11 +31,13 @@
 
     (:action mover
         :parameters (?r - rover ?ori - base ?des - base)
-        :precondition (and (aparcado ?r ?ori) (conectado ?ori ?des))
+        :precondition (and (aparcado ?r ?ori) (conectado ?ori ?des) (> (CombustibleRestante ?r) 0))
         :effect (and
             (aparcado ?r ?des)
             (not (aparcado ?r ?ori))
-            (increase (CombustibleUtilizado ?r) 1)
+            (decrease
+                (CombustibleRestante ?r)
+                (DecresimientoCombusitible))
             (increase (CombustibleTotal) 1)
         )
     )
@@ -66,19 +69,19 @@
     )
 
     (:action descargar_personal
-        :parameters (?p - personal ?r - rover ?a - asentamiento ?prio - alta)
+        :parameters (?p - personal ?r - rover ?a - asentamiento ?id - idpedido)
         :precondition (and (en_rover ?p ?r) (pedido ?p ?a ?id) (aparcado ?r ?a))
         :effect (and
             (suministrado ?p)
             (not (pedido ?p ?a ?id))
             (not (en_rover ?p ?r))
             (decrease (PersonalCargado ?r) 1)
-            (increase (AcumPrioridad) (Priodidad ?id))
+            (increase (AcumPrioridad) (Prioridad ?id))
         )
     )
 
     (:action descargar_suministro
-        :parameters (?s - suministro ?r - rover ?a - asentamiento)
+        :parameters (?s - suministro ?r - rover ?a - asentamiento ?id - idpedido)
         :precondition (and (en_rover ?s ?r) (pedido ?s ?a ?id) (aparcado ?r ?a))
         :effect (and
             (suministrado ?s)

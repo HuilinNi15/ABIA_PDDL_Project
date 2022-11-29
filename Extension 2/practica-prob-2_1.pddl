@@ -1,4 +1,5 @@
-(define (problem RoversSuministrosPersonal) (:domain BasesMarte_extension2_1)
+(define (problem RoversSuministrosPersonal)
+    (:domain BasesMarte_extension2_1)
 
     (:objects
         as1 as2 - asentamiento
@@ -15,8 +16,9 @@
         (= (PersonalCargado Curiosity) 0)
         (= (SuministroCargado Curiosity) 0)
         (= (CombustibleRestante Curiosity) 10)
-        
-        (= (CombustibleTotalUtilizado) 0)
+        (=(DecresimientoCombusitible) 0)
+
+        (= (CombustibleTotal) 0)
 
         (aparcado Curiosity al1)
 
@@ -38,5 +40,12 @@
         (pedido oculista as1)
     )
 
-    (:goal (forall (?t - transportable) (suministrado ?t)))
+    (:goal
+        (forall
+            (?t - transportable)
+            (suministrado ?t))
+    )
+    (:metric minimize
+        (CombustibleTotal)
+    )
 )

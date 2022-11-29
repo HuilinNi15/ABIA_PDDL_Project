@@ -1,4 +1,4 @@
-(define (problem RoversSuministrosPersonal) (:domain BasesMarte_extension2_2)
+(define (problem RoversSuministrosPersonal) (:domain BasesMarte_nivel_basico)
 
     (:objects
         rover0 - rover
@@ -9,6 +9,10 @@
     )
 
     (:init
+        (= (p) 2)
+        (= (s) 1)
+        (= (CombustibleTotal) 0)
+        (= (DecresimientoCombusitible) 0)
         (conectado al1 as2)
         (conectado as2 al1)
         (conectado as2 al3)
@@ -18,6 +22,9 @@
         (conectado as4 al1)
         (conectado al1 as4)
         (aparcado rover0 al1)
+        ((= (PersonalCargado rover0) 0))
+        ((= (SuministroCargado rover0) 0))
+        ((= (CombustibleRestante rover0) 10))
         (en_base p0 as4)
         (pedido p0 as2)
         (en_base p1 as2)
