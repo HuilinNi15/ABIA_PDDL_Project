@@ -1,6 +1,8 @@
 import os
 import pathlib
 import random
+import subprocess
+import shlex
 
 
 class Problem():
@@ -43,13 +45,13 @@ class Problem():
         bases = {}
         warehouses = []
         settlements = []
-        priorites = []
+        priorities = []
         if self.level == 'Extension 3':
             for i in range(suministros + personal):
-                priorites.append(f'id{i}')
+                priorities.append(f'id{i}')
                 priority = rand.randint(1, 3)
                 init.append(f"= (Prioridad id{i}) {priority}")
-            priorites.append('idpedido')
+            priorities.append('idpedido')
         for i in map:
             for j in i:
                 if j not in bases:
@@ -123,7 +125,10 @@ class Problem():
                 init.append(f'pedido {supplies[i]} {base_pedido}')
         supplies.append('suministro')
 
-        return [rovers, people, supplies, warehouses, settlements, priorites], init
+        if self.level == 'Extension 3':
+            return [rovers, people, supplies, warehouses, settlements, priorities], init
+        else:
+            return [rovers, people, supplies, warehouses, settlements], init
 
     def write_problem(self, objects, init) -> None:
         assert self.problem == "custom", "The Problem should be custom"
@@ -183,8 +188,12 @@ class Problem():
             file.writelines(lines)
 
     def execute(self) -> None:
-        cmd = f'{self.paths["executable"]} -o "{self.paths["domain"]}" -f "{self.paths["problem"]}" > "{self.paths["output"]}"'
-        os.system(cmd)
+        cmd = f'"{self.paths["executable"]}" -o "{self.paths["domain"]}" -f "{self.paths["problem"]}"'
+        output = subprocess.run(shlex.split(cmd), capture_output=True).stdout
+        output = str(output).replace('\\n', '\n')
+        print(output)
+        with open(self.paths["output"], 'w') as f:
+            f.writelines(str(output))
 
     def read_output(self):
         with open(self.paths['read_output']) as f:
