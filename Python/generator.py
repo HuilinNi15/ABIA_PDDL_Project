@@ -36,7 +36,8 @@ class Problem():
     def generate_problem(self, n_rovers=1, suministros=4, personal=4, map=[(1, 2), (2, 3), (3, 4), (4, 1)], warehouses=[], settlements=[], r_map=0.5, seed=1234):
         assert self.problem == "custom", "The Problem should be custom"
         assert len(map) >= 2, "Map too small"
-        assert suministros > 0 and personal > 0 and n_rovers > 0, "To little supplies"
+        assert n_rovers > 0 and (
+            suministros > 0 or personal > 0), "To little supplies"
         init = []
         rand = random.Random(seed)
 
@@ -195,8 +196,9 @@ class Problem():
         with open(self.paths['write_problem'], 'w') as file:
             file.writelines(lines)
 
-    def execute(self) -> None:
-        cmd = f'"{self.paths["executable"]}" -O -o "{self.paths["domain"]}" -f "{self.paths["problem"]}"'
+    def execute(self, optim=False) -> None:
+        O = " -O " if optim else ""
+        cmd = f'"{self.paths["executable"]}" {O}-o "{self.paths["domain"]}" -f "{self.paths["problem"]}"'
         output = subprocess.run(shlex.split(cmd), capture_output=True).stdout
         output = str(output).replace('\\n', '\n')
         print(output)
