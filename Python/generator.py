@@ -1,4 +1,3 @@
-import os
 import pathlib
 import random
 import subprocess
@@ -6,11 +5,13 @@ import shlex
 
 
 class Problem():
+
     def __init__(self, level='Extension 1', domain='nivelbasico', problem='1') -> None:
         self.level = level
         self.domain = domain
         self.problem = problem
         self.paths = self.find_paths()
+
 
     def find_paths(self) -> dict:
         project_path = str(pathlib.Path().resolve())
@@ -33,6 +34,7 @@ class Problem():
                 'read_output': read_output,
                 'write_problem': write_problem}
 
+
     def generate_problem(self, n_rovers=1, suministros=4, personal=4, map=[(1, 2), (2, 3), (3, 4), (4, 1)], warehouses=[], settlements=[], r_map=0.5, seed=1234):
         assert self.problem == "custom", "The Problem should be custom"
         assert len(map) >= 2, "Map too small"
@@ -43,7 +45,7 @@ class Problem():
         # ---------------------------------- BASES ----------------------------------
         bases = {}
         priorities = []
-        if self.level == 'Extension 3':
+        if self.level == 'Extension 3': # -------------------------- EXTENSION 3
             for i in range(suministros + personal):
                 priorities.append(f'id{i}')
                 priority = rand.randint(1, 3)
@@ -98,10 +100,10 @@ class Problem():
             rovers.append(f'rover{i}')
             base = rand.choice(list(bases.keys()))
             init.append(f'aparcado {rovers[i]} {bases[base]}')
-            if self.level != 'Nivel basico':
+            if self.level != 'Nivel basico': # -------------------------- EXTENSIONES 1, 2, 3
                 init.append(f'(= (PersonalCargado {rovers[i]}) 0)')
                 init.append(f'(= (SuministroCargado {rovers[i]}) 0)')
-                if self.level != 'Extension 1':
+                if self.level != 'Extension 1': # -------------------------- EXTENSIONES 2, 3
                     init.append(f'(= (CombustibleRestante {rovers[i]}) 10)')
         rovers.append('rover')
 
@@ -113,7 +115,7 @@ class Problem():
             init.append(f'en_base {people[i]} {base}')
             base_pedido = rand.choice(settlements[:settlements.index(
                 base)] + settlements[settlements.index(base) + 1:-1])
-            if self.level == 'Extension 3':
+            if self.level == 'Extension 3': # -------------------------- EXTENSION 3
                 init.append(f'pedido {people[i]} {base_pedido} {i}')
             else:
                 init.append(f'pedido {people[i]} {base_pedido}')
@@ -126,17 +128,18 @@ class Problem():
             base = rand.choice(warehouses[:-1])
             init.append(f'en_base {supplies[i]} {base}')
             base_pedido = rand.choice(settlements[:-1])
-            if self.level == 'Extension 3':
+            if self.level == 'Extension 3': # -------------------------- EXTENSION 3
                 init.append(
                     f'pedido {supplies[i]} {base_pedido} {personal + i}')
             else:
                 init.append(f'pedido {supplies[i]} {base_pedido}')
         supplies.append('suministro')
 
-        if self.level == 'Extension 3':
+        if self.level == 'Extension 3': # -------------------------- EXTENSION 3
             return [rovers, people, supplies, warehouses, settlements, priorities], init
         else:
             return [rovers, people, supplies, warehouses, settlements], init
+
 
     def write_problem(self, objects, init) -> None:
         assert self.problem == "custom", "The Problem should be custom"
@@ -195,13 +198,14 @@ class Problem():
         with open(self.paths['write_problem'], 'w') as file:
             file.writelines(lines)
 
+
     def execute(self) -> None:
         cmd = f'"{self.paths["executable"]}" -O -o "{self.paths["domain"]}" -f "{self.paths["problem"]}"'
         output = subprocess.run(shlex.split(cmd), capture_output=True).stdout
         output = str(output).replace('\\n', '\n')
-        print(output)
         with open(self.paths["output"], 'w') as f:
             f.writelines(str(output))
+
 
     def read_output(self):
         with open(self.paths['read_output']) as f:
@@ -230,6 +234,4 @@ class Problem():
                     line = line[11:-1].split()
                     steps.append(line)
 
-        for i in steps:
-            print(i)
-        print(times)
+        return steps, times
