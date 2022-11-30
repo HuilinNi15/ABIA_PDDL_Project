@@ -33,7 +33,7 @@ class Problem():
                 'read_output': read_output,
                 'write_problem': write_problem}
 
-    def generate_problem(self, n_rovers=1, suministros=4, personal=4, map=[(1, 2), (2, 3), (3, 4), (4, 1)], r_map=0.5, seed=1234):
+    def generate_problem(self, n_rovers=1, suministros=4, personal=4, map=[(1, 2), (2, 3), (3, 4), (4, 1)], warehouses=[], settlements=[], r_map=0.5, seed=1234):
         assert self.problem == "custom", "The Problem should be custom"
         assert len(map) >= 2, "Map too small"
         assert suministros > 0 and personal > 0 and n_rovers > 0, "To little supplies"
@@ -43,8 +43,6 @@ class Problem():
 
         # ---------------------------------- BASES ----------------------------------
         bases = {}
-        warehouses = []
-        settlements = []
         priorities = []
         if self.level == 'Extension 3':
             for i in range(suministros + personal):
@@ -57,28 +55,39 @@ class Problem():
                 if j not in bases:
                     bases[j] = ""
 
-        minimum = rand.choices(list(bases.keys()), k=3)
-        bases[minimum[0]] = f"as{minimum[0]}"
-        settlements.append(bases[minimum[0]])
-        bases[minimum[1]] = f"as{minimum[1]}"
-        settlements.append(bases[minimum[1]])
-        bases[minimum[2]] = f"al{minimum[2]}"
-        warehouses.append(bases[minimum[2]])
+        if not warehouses and settlements:
+            minimum = rand.choices(list(bases.keys()), k=3)
+            bases[minimum[0]] = f"as{minimum[0]}"
+            settlements.append(bases[minimum[0]])
+            bases[minimum[1]] = f"as{minimum[1]}"
+            settlements.append(bases[minimum[1]])
+            bases[minimum[2]] = f"al{minimum[2]}"
+            warehouses.append(bases[minimum[2]])
 
-        for i in bases.keys():
-            if bases[i] == "":
-                base = rand.choices(['as', 'al'], weights=[
-                                    r_map, 1 - r_map], k=1)[0]
-                bases[i] = base + str(i)
-                if base == 'al':
-                    warehouses.append(bases[i])
-                else:
-                    settlements.append(bases[i])
+            for i in bases.keys():
+                if bases[i] == "":
+                    base = rand.choices(['as', 'al'], weights=[
+                                        r_map, 1 - r_map], k=1)[0]
+                    bases[i] = base + str(i)
+                    if base == 'al':
+                        warehouses.append(bases[i])
+                    else:
+                        settlements.append(bases[i])
+        else:
+            for i in warehouses:
+                bases[i] = f"al{i}"
+
+            for i in settlements:
+                bases[i] = f"as{i}"
+
+            warehouses = [f"al{i}" for i in warehouses]
+            settlements = [f"as{i}" for i in settlements]
 
         for i in map:
             init.append(f'conectado {bases[i[0]]} {bases[i[1]]}')
             init.append(f'conectado {bases[i[1]]} {bases[i[0]]}')
 
+        # Esto se podría eliminar???
         if len(warehouses) > 0:
             warehouses.append('almacen')
         if len(settlements) > 0:
@@ -188,7 +197,7 @@ class Problem():
             file.writelines(lines)
 
     def execute(self) -> None:
-        cmd = f'"{self.paths["executable"]}" -o "{self.paths["domain"]}" -f "{self.paths["problem"]}"'
+        cmd = f'"{self.paths["executable"]}" -O -o "{self.paths["domain"]}" -f "{self.paths["problem"]}"'
         output = subprocess.run(shlex.split(cmd), capture_output=True).stdout
         output = str(output).replace('\\n', '\n')
         print(output)
