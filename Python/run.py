@@ -6,14 +6,15 @@ print(problem.paths)
 
 
 n_rovers = 1
-suministros = 500
-personal = 500
+suministros = 250
+personal = 250
 
 mars_map = [(1, 2), (2, 3), (3, 4), (4, 1), (5, 2),
 
             (5, 3), (6, 7), (6, 5),  (6, 1), (7, 2)]
-warehouses = [1, 3]
-settlements = [4, 2, 5, 6, 7]
+
+warehouses = []
+settlements = []
 
 r_map = 0.5
 seed = 1234

@@ -37,7 +37,6 @@ class Problem():
         assert self.problem == "custom", "The Problem should be custom"
         assert len(map) >= 2, "Map too small"
         assert suministros > 0 and personal > 0 and n_rovers > 0, "To little supplies"
-
         init = []
         rand = random.Random(seed)
 
@@ -55,7 +54,7 @@ class Problem():
                 if j not in bases:
                     bases[j] = ""
 
-        if not warehouses and settlements:
+        if not warehouses and not settlements:
             minimum = rand.choices(list(bases.keys()), k=3)
             bases[minimum[0]] = f"as{minimum[0]}"
             settlements.append(bases[minimum[0]])
