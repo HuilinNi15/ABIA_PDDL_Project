@@ -22,7 +22,7 @@
         (SuministroCargado ?r - rover)
         (CombustibleRestante ?r - rover)
         (CombustibleTotal)
-        (DecresimientoCombusitible)
+        (DecrecimientoCombusitible)
         (p) ;capacidad máxima de personal por rover
         (s) ;capacidad máxima de suministro por rover
     )
@@ -36,7 +36,7 @@
             (not (aparcado ?r ?ori))
             (decrease
                 (CombustibleRestante ?r)
-                (DecresimientoCombusitible))
+                (DecrecimientoCombusitible))
             (increase (CombustibleTotal) 1)
         )
     )
