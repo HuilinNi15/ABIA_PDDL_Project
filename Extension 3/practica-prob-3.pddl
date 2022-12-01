@@ -63,7 +63,4 @@
             (suministrado ?t))
     )
 
-    (:metric maximize
-        (AcumPrioridad)
-    )
 )

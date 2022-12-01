@@ -50,6 +50,7 @@ class Problem():
                 priority = rand.randint(1, 3)
                 init.append(f"= (Prioridad id{i}) {priority}")
             priorities.append('idpedido')
+
         for i in map:
             for j in i:
                 if j not in bases:
@@ -191,8 +192,8 @@ class Problem():
         input = ""
         for i in lines:
             input += i
-        print(input)
-
+        # print(input)
+        print(self.paths['write_problem'])
         with open(self.paths['write_problem'], 'w') as file:
             file.writelines(lines)
 
@@ -201,6 +202,7 @@ class Problem():
         cmd = f'"{self.paths["executable"]}" {O}-o "{self.paths["domain"]}" -f "{self.paths["problem"]}"'
         output = subprocess.run(shlex.split(cmd), capture_output=True).stdout
         output = str(output).replace('\\n', '\n')
+        print(output)
         with open(self.paths["output"], 'w') as f:
             f.writelines(str(output))
 
@@ -222,8 +224,7 @@ class Problem():
 
             if add_times:
                 if len(line) > 8:
-                    line = line[15:-1]
-                    line = [line[:4], line[5:]]
+                    line = line[15:-1].split()
                     times.append(line)
 
             elif add_steps:
@@ -231,4 +232,15 @@ class Problem():
                     line = line[11:-1].split()
                     steps.append(line)
 
+        print('------------------------------------------')
+        print(f"Step: {len(steps)}")
+        print(f"Time: {times[6][0]}")
+        print(f"easy actions: {times[0][3]}")
+        print(f"hard actions: {times[0][5]}")
+        print(f"facts: {times[1][5]}")
+        print(f"actions: {times[1][8]}")
+        print(f"relevant facts: {times[2][6]}")
+        print(f"relevant fluents: {times[2][9]}")
+        print(f"states: {times[5][4]}")
+        print(f"depth: {times[5][11]}")
         return steps, times
