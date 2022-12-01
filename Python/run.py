@@ -10,10 +10,10 @@ suministros = 2
 personal = 2
 
 mars_map = [(1, 2), (2, 3)]
-
 warehouses = [2]
 settlements = [1, 3]
-r_map = 0.5
+
+_map = 0.5
 
 for _ in range(1):
     seed = rand.randint(1, 1000000000)
