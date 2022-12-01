@@ -7,6 +7,7 @@ problem 'ROVERSSUMINISTROSPERSONAL' defined
  ... done.
 
 
+warning: undefined fluent used in optimization expression. defaulting to plan length
 no metric specified. plan length assumed.
 
 checking for cyclic := effects --- OK.
@@ -18,9 +19,9 @@ best first search space empty! problem proven unsolvable.
 
 
 
-time spent:    0.00 seconds instantiating 134 easy, 0 hard action templates
-               0.00 seconds reachability analysis, yielding 27 facts and 21 actions
-               0.00 seconds creating final representation with 24 relevant facts, 7 relevant fluents
+time spent:    0.00 seconds instantiating 42 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 19 facts and 8 actions
+               0.00 seconds creating final representation with 19 relevant facts, 6 relevant fluents
                0.00 seconds computing LNF
                0.00 seconds building connectivity graph
                0.00 seconds searching, evaluating 1 states, to a max depth of 0

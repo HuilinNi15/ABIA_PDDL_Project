@@ -15,8 +15,8 @@
         (= (s) 1)
         (= (PersonalCargado Curiosity) 0)
         (= (SuministroCargado Curiosity) 0)
-        (= (CombustibleRestante Curiosity) 0)
-        (= (DecresimientoCombusitible) 1)
+        (= (CombustibleRestante Curiosity) 1)
+        (= (DecrecimientoCombusitible) 0)
         (= (CombustibleTotal) 0)
         (= (AcumPrioridad) 0)
         (aparcado Curiosity al1)
@@ -61,6 +61,9 @@
         (forall
             (?t - transportable)
             (suministrado ?t))
+    )
+    (:metric maximize
+        (AcumPrioridad)
     )
 
 )
