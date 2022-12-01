@@ -21,7 +21,7 @@
         (PersonalCargado ?r - rover)
         (SuministroCargado ?r - rover)
         (CombustibleRestante ?r - rover)
-        (DecresimientoCombusitible)
+        (DecrecimientoCombusitible)
         (CombustibleTotal)
         (Prioridad ?id - idpedido)
         (AcumPrioridad) ; función que acumula la prioridad de los pedidos que se van entregando
@@ -37,7 +37,7 @@
             (not (aparcado ?r ?ori))
             (decrease
                 (CombustibleRestante ?r)
-                (DecresimientoCombusitible))
+                (DecrecimientoCombusitible))
             (increase (CombustibleTotal) 1)
         )
     )

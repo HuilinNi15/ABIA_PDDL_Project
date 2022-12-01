@@ -170,7 +170,7 @@ class Problem():
             init_lines += '        (= (p) 2)\n        (= (s) 1)\n'
             if self.level != 'Extension 1':
                 init_lines += '        (= (CombustibleTotal) 0)\n'
-                init_lines += '        (= (DecresimientoCombusitible) 0)\n'
+                init_lines += '        (= (DecrecimientoCombusitible) 0)\n'
         for j in init:
             init_lines.append(f'        ({j})\n')
 
