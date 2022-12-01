@@ -192,8 +192,7 @@ class Problem():
         input = ""
         for i in lines:
             input += i
-        # print(input)
-        print(self.paths['write_problem'])
+
         with open(self.paths['write_problem'], 'w') as file:
             file.writelines(lines)
 

@@ -9,14 +9,15 @@ print(problem.paths)
 n_rovers = 2
 suministros = 20
 personal = 10
+optim = True
 
 mars_map = [(1, 2), (2, 3), (3, 4)]
 warehouses = [2]
 settlements = [1, 3, 4]
-
 r_map = 0.5
 
 seeds = [rand.randint(1, 1000000000) for _ in range(10)]
+
 n = len(seeds)
 results = []
 for seed in seeds:
@@ -24,7 +25,7 @@ for seed in seeds:
         n_rovers, suministros, personal, mars_map, warehouses, settlements, r_map, seed)
 
     problem.write_problem(objects, init)
-    problem.execute(optim=True)
+    problem.execute(optim)
     steps, times, result = problem.read_output()
     results.append(result)
 mean = []
@@ -32,6 +33,7 @@ mean = []
 df = pd.DataFrame(results)
 df = df.astype(float)
 mean = df.mean()
+
 print(results[0])
 print('------------------------------------------')
 print(f"Step: {mean[0]}")
