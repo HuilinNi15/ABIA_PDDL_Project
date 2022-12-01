@@ -1,13 +1,12 @@
 b"
 ff: parsing domain file
-domain 'BASESMARTE_EXTENSION3' defined
+domain 'BASESMARTE_EXTENSION1' defined
  ... done.
 ff: parsing problem file
 problem 'ROVERSSUMINISTROSPERSONAL' defined
  ... done.
 
 
-warning: undefined fluent used in optimization expression. defaulting to plan length
 no metric specified. plan length assumed.
 
 checking for cyclic := effects --- OK.
@@ -15,16 +14,211 @@ checking for cyclic := effects --- OK.
 ff: search configuration is  best-first on 1*g(s) + 5*h(s) where
     metric is  plan length
 
-best first search space empty! problem proven unsolvable.
+advancing to distance:   63
+                         62
+                         61
+                         60
+                         59
+                         58
+                         57
+                         56
+                         55
+                         54
+                         53
+                         52
+                         51
+                         50
+                         49
+                         48
+                         47
+                         46
+                         45
+                         44
+                         43
+                         42
+                         41
+                         40
+                         39
+                         38
+                         37
+                         36
+                         35
+                         34
+                         33
+                         32
+                         31
+                         30
+                         29
+                         28
+                         27
+                         26
+                         25
+                         24
+                         23
+                         22
+                         21
+                         20
+                         19
+                         18
+                         17
+                         16
+                         15
+                         14
+                         13
+                         12
+                         11
+                         10
+                          9
+                          8
+                          7
+                          6
+                          5
+                          4
+                          3
+                          2
+                          1
+                          0
 
+ff: found legal plan as follows
 
+step    0: MOVER ROVER1 AS1 AL2
+        1: MOVER ROVER0 AS1 AL2
+        2: CARGAR_SUMINISTRO S3 ROVER0 AL2
+        3: MOVER ROVER0 AL2 AS1
+        4: DESCARGAR_SUMINISTRO S3 ROVER0 AS1
+        5: MOVER ROVER0 AS1 AL2
+        6: CARGAR_SUMINISTRO S4 ROVER0 AL2
+        7: CARGAR_SUMINISTRO S18 ROVER1 AL2
+        8: MOVER ROVER0 AL2 AS3
+        9: MOVER ROVER1 AL2 AS3
+       10: DESCARGAR_SUMINISTRO S18 ROVER1 AS3
+       11: DESCARGAR_SUMINISTRO S4 ROVER0 AS3
+       12: CARGAR_PERSONAL P0 ROVER0 AS3
+       13: CARGAR_PERSONAL P3 ROVER0 AS3
+       14: MOVER ROVER0 AS3 AL2
+       15: MOVER ROVER1 AS3 AL2
+       16: MOVER ROVER0 AL2 AS1
+       17: DESCARGAR_PERSONAL P0 ROVER0 AS1
+       18: DESCARGAR_PERSONAL P3 ROVER0 AS1
+       19: MOVER ROVER0 AS1 AL2
+       20: CARGAR_SUMINISTRO S5 ROVER0 AL2
+       21: MOVER ROVER0 AL2 AS1
+       22: DESCARGAR_SUMINISTRO S5 ROVER0 AS1
+       23: MOVER ROVER0 AS1 AL2
+       24: CARGAR_SUMINISTRO S6 ROVER0 AL2
+       25: CARGAR_SUMINISTRO S16 ROVER1 AL2
+       26: MOVER ROVER0 AL2 AS3
+       27: MOVER ROVER1 AL2 AS3
+       28: DESCARGAR_SUMINISTRO S16 ROVER1 AS3
+       29: DESCARGAR_SUMINISTRO S6 ROVER0 AS3
+       30: MOVER ROVER1 AS3 AS4
+       31: CARGAR_PERSONAL P6 ROVER1 AS4
+       32: CARGAR_PERSONAL P9 ROVER1 AS4
+       33: MOVER ROVER0 AS3 AL2
+       34: CARGAR_SUMINISTRO S7 ROVER0 AL2
+       35: MOVER ROVER0 AL2 AS3
+       36: MOVER ROVER1 AS4 AS3
+       37: DESCARGAR_PERSONAL P6 ROVER1 AS3
+       38: DESCARGAR_PERSONAL P9 ROVER1 AS3
+       39: DESCARGAR_SUMINISTRO S7 ROVER0 AS3
+       40: MOVER ROVER0 AS3 AS4
+       41: MOVER ROVER1 AS3 AL2
+       42: CARGAR_SUMINISTRO S10 ROVER1 AL2
+       43: MOVER ROVER1 AL2 AS3
+       44: DESCARGAR_SUMINISTRO S10 ROVER1 AS3
+       45: MOVER ROVER1 AS3 AL2
+       46: CARGAR_SUMINISTRO S17 ROVER1 AL2
+       47: CARGAR_PERSONAL P1 ROVER0 AS4
+       48: CARGAR_PERSONAL P2 ROVER0 AS4
+       49: MOVER ROVER0 AS4 AS3
+       50: MOVER ROVER1 AL2 AS1
+       51: DESCARGAR_SUMINISTRO S17 ROVER1 AS1
+       52: CARGAR_PERSONAL P4 ROVER1 AS1
+       53: CARGAR_PERSONAL P7 ROVER1 AS1
+       54: MOVER ROVER1 AS1 AL2
+       55: MOVER ROVER1 AL2 AS3
+       56: DESCARGAR_PERSONAL P7 ROVER1 AS3
+       57: MOVER ROVER0 AS3 AL2
+       58: MOVER ROVER0 AL2 AS1
+       59: DESCARGAR_PERSONAL P1 ROVER0 AS1
+       60: DESCARGAR_PERSONAL P2 ROVER0 AS1
+       61: CARGAR_PERSONAL P8 ROVER1 AS3
+       62: MOVER ROVER1 AS3 AS4
+       63: DESCARGAR_PERSONAL P4 ROVER1 AS4
+       64: CARGAR_PERSONAL P5 ROVER1 AS4
+       65: MOVER ROVER1 AS4 AS3
+       66: MOVER ROVER1 AS3 AL2
+       67: MOVER ROVER1 AL2 AS1
+       68: DESCARGAR_PERSONAL P8 ROVER1 AS1
+       69: DESCARGAR_PERSONAL P5 ROVER1 AS1
+       70: MOVER ROVER0 AS1 AL2
+       71: CARGAR_SUMINISTRO S11 ROVER0 AL2
+       72: MOVER ROVER0 AL2 AS1
+       73: DESCARGAR_SUMINISTRO S11 ROVER0 AS1
+       74: MOVER ROVER1 AS1 AL2
+       75: CARGAR_SUMINISTRO S13 ROVER1 AL2
+       76: MOVER ROVER1 AL2 AS1
+       77: DESCARGAR_SUMINISTRO S13 ROVER1 AS1
+       78: MOVER ROVER1 AS1 AL2
+       79: MOVER ROVER0 AS1 AL2
+       80: CARGAR_SUMINISTRO S0 ROVER0 AL2
+       81: MOVER ROVER0 AL2 AS3
+       82: MOVER ROVER0 AS3 AS4
+       83: DESCARGAR_SUMINISTRO S0 ROVER0 AS4
+       84: CARGAR_SUMINISTRO S1 ROVER1 AL2
+       85: MOVER ROVER1 AL2 AS3
+       86: MOVER ROVER1 AS3 AS4
+       87: DESCARGAR_SUMINISTRO S1 ROVER1 AS4
+       88: MOVER ROVER1 AS4 AS3
+       89: MOVER ROVER1 AS3 AL2
+       90: CARGAR_SUMINISTRO S2 ROVER1 AL2
+       91: MOVER ROVER1 AL2 AS3
+       92: MOVER ROVER1 AS3 AS4
+       93: DESCARGAR_SUMINISTRO S2 ROVER1 AS4
+       94: MOVER ROVER1 AS4 AS3
+       95: MOVER ROVER1 AS3 AL2
+       96: CARGAR_SUMINISTRO S8 ROVER1 AL2
+       97: MOVER ROVER1 AL2 AS3
+       98: MOVER ROVER1 AS3 AS4
+       99: DESCARGAR_SUMINISTRO S8 ROVER1 AS4
+      100: MOVER ROVER1 AS4 AS3
+      101: MOVER ROVER1 AS3 AL2
+      102: CARGAR_SUMINISTRO S9 ROVER1 AL2
+      103: MOVER ROVER1 AL2 AS3
+      104: MOVER ROVER1 AS3 AS4
+      105: DESCARGAR_SUMINISTRO S9 ROVER1 AS4
+      106: MOVER ROVER1 AS4 AS3
+      107: MOVER ROVER1 AS3 AL2
+      108: CARGAR_SUMINISTRO S12 ROVER1 AL2
+      109: MOVER ROVER1 AL2 AS3
+      110: MOVER ROVER1 AS3 AS4
+      111: DESCARGAR_SUMINISTRO S12 ROVER1 AS4
+      112: MOVER ROVER1 AS4 AS3
+      113: MOVER ROVER1 AS3 AL2
+      114: CARGAR_SUMINISTRO S14 ROVER1 AL2
+      115: MOVER ROVER1 AL2 AS3
+      116: MOVER ROVER1 AS3 AS4
+      117: DESCARGAR_SUMINISTRO S14 ROVER1 AS4
+      118: MOVER ROVER1 AS4 AS3
+      119: MOVER ROVER1 AS3 AL2
+      120: CARGAR_SUMINISTRO S15 ROVER1 AL2
+      121: MOVER ROVER1 AL2 AS3
+      122: MOVER ROVER1 AS3 AS4
+      123: DESCARGAR_SUMINISTRO S15 ROVER1 AS4
+      124: MOVER ROVER0 AS4 AS3
+      125: MOVER ROVER0 AS3 AL2
+      126: CARGAR_SUMINISTRO S19 ROVER0 AL2
+      127: MOVER ROVER0 AL2 AS3
+      128: MOVER ROVER0 AS3 AS4
+      129: DESCARGAR_SUMINISTRO S19 ROVER0 AS4
+     
 
-time spent:    0.00 seconds instantiating 42 easy, 0 hard action templates
-               0.00 seconds reachability analysis, yielding 19 facts and 8 actions
-               0.00 seconds creating final representation with 19 relevant facts, 6 relevant fluents
+time spent:    0.00 seconds instantiating 292 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 158 facts and 132 actions
+               0.00 seconds creating final representation with 158 relevant facts, 8 relevant fluents
                0.00 seconds computing LNF
                0.00 seconds building connectivity graph
-               0.00 seconds searching, evaluating 1 states, to a max depth of 0
-               0.00 seconds total time
+               0.31 seconds searching, evaluating 1727 states, to a max depth of 0
+               0.31 seconds total time
 
 "

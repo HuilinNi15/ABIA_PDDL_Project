@@ -232,15 +232,6 @@ class Problem():
                     line = line[11:-1].split()
                     steps.append(line)
 
-        print('------------------------------------------')
-        print(f"Step: {len(steps)}")
-        print(f"Time: {times[6][0]}")
-        print(f"easy actions: {times[0][3]}")
-        print(f"hard actions: {times[0][5]}")
-        print(f"facts: {times[1][5]}")
-        print(f"actions: {times[1][8]}")
-        print(f"relevant facts: {times[2][6]}")
-        print(f"relevant fluents: {times[2][9]}")
-        print(f"states: {times[5][4]}")
-        print(f"depth: {times[5][11]}")
-        return steps, times
+        result = [len(steps), times[6][0], times[0][3], times[0][5], times[1]
+                  [5], times[1][8], times[2][6], times[2][9], times[5][4], times[5][11]]
+        return steps, times, result
