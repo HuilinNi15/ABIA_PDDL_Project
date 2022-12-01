@@ -14,7 +14,445 @@ checking for cyclic := effects --- OK.
 ff: search configuration is  best-first on 1*g(s) + 5*h(s) where
     metric is  plan length
 
-advancing to distance:   65
+advancing to distance:  502
+                        501
+                        500
+                        499
+                        498
+                        497
+                        496
+                        495
+                        494
+                        493
+                        492
+                        491
+                        490
+                        489
+                        488
+                        487
+                        486
+                        485
+                        484
+                        483
+                        482
+                        481
+                        480
+                        479
+                        478
+                        477
+                        476
+                        475
+                        474
+                        473
+                        472
+                        471
+                        470
+                        469
+                        468
+                        467
+                        466
+                        465
+                        464
+                        463
+                        462
+                        461
+                        460
+                        459
+                        458
+                        457
+                        456
+                        455
+                        454
+                        453
+                        452
+                        451
+                        450
+                        449
+                        448
+                        447
+                        446
+                        445
+                        444
+                        443
+                        442
+                        441
+                        440
+                        439
+                        438
+                        437
+                        436
+                        435
+                        434
+                        433
+                        432
+                        431
+                        430
+                        429
+                        428
+                        427
+                        426
+                        425
+                        424
+                        423
+                        422
+                        421
+                        420
+                        419
+                        418
+                        417
+                        416
+                        415
+                        414
+                        413
+                        412
+                        411
+                        410
+                        409
+                        408
+                        407
+                        406
+                        405
+                        404
+                        403
+                        402
+                        401
+                        400
+                        399
+                        398
+                        397
+                        396
+                        395
+                        394
+                        393
+                        392
+                        391
+                        390
+                        389
+                        388
+                        387
+                        386
+                        385
+                        384
+                        383
+                        382
+                        381
+                        380
+                        379
+                        378
+                        377
+                        376
+                        375
+                        374
+                        373
+                        372
+                        371
+                        370
+                        369
+                        368
+                        367
+                        366
+                        365
+                        364
+                        363
+                        362
+                        361
+                        360
+                        359
+                        358
+                        357
+                        356
+                        355
+                        354
+                        353
+                        352
+                        351
+                        350
+                        349
+                        348
+                        347
+                        346
+                        345
+                        344
+                        343
+                        342
+                        341
+                        340
+                        339
+                        338
+                        337
+                        336
+                        335
+                        334
+                        333
+                        332
+                        331
+                        330
+                        329
+                        328
+                        327
+                        326
+                        325
+                        324
+                        323
+                        322
+                        321
+                        320
+                        319
+                        318
+                        317
+                        316
+                        315
+                        314
+                        313
+                        312
+                        311
+                        310
+                        309
+                        308
+                        307
+                        306
+                        305
+                        304
+                        303
+                        302
+                        301
+                        300
+                        299
+                        298
+                        297
+                        296
+                        295
+                        294
+                        293
+                        292
+                        291
+                        290
+                        289
+                        288
+                        287
+                        286
+                        285
+                        284
+                        283
+                        282
+                        281
+                        280
+                        279
+                        278
+                        277
+                        276
+                        275
+                        274
+                        273
+                        272
+                        271
+                        270
+                        269
+                        268
+                        267
+                        266
+                        265
+                        264
+                        263
+                        262
+                        261
+                        260
+                        259
+                        258
+                        257
+                        256
+                        255
+                        254
+                        253
+                        252
+                        251
+                        250
+                        249
+                        248
+                        247
+                        246
+                        245
+                        244
+                        243
+                        242
+                        241
+                        240
+                        239
+                        238
+                        237
+                        236
+                        235
+                        234
+                        233
+                        232
+                        231
+                        230
+                        229
+                        228
+                        227
+                        226
+                        225
+                        224
+                        223
+                        222
+                        221
+                        220
+                        219
+                        218
+                        217
+                        216
+                        215
+                        214
+                        213
+                        212
+                        211
+                        210
+                        209
+                        208
+                        207
+                        206
+                        205
+                        204
+                        203
+                        202
+                        201
+                        200
+                        199
+                        198
+                        197
+                        196
+                        195
+                        194
+                        193
+                        192
+                        191
+                        190
+                        189
+                        188
+                        187
+                        186
+                        185
+                        184
+                        183
+                        182
+                        181
+                        180
+                        179
+                        178
+                        177
+                        176
+                        175
+                        174
+                        173
+                        172
+                        171
+                        170
+                        169
+                        168
+                        167
+                        166
+                        165
+                        164
+                        163
+                        162
+                        161
+                        160
+                        159
+                        158
+                        157
+                        156
+                        155
+                        154
+                        153
+                        152
+                        151
+                        150
+                        149
+                        148
+                        147
+                        146
+                        145
+                        144
+                        143
+                        142
+                        141
+                        140
+                        139
+                        138
+                        137
+                        136
+                        135
+                        134
+                        133
+                        132
+                        131
+                        130
+                        129
+                        128
+                        127
+                        126
+                        125
+                        124
+                        123
+                        122
+                        121
+                        120
+                        119
+                        118
+                        117
+                        116
+                        115
+                        114
+                        113
+                        112
+                        111
+                        110
+                        109
+                        108
+                        107
+                        106
+                        105
+                        104
+                        103
+                        102
+                        101
+                        100
+                         99
+                         98
+                         97
+                         96
+                         95
+                         94
+                         93
+                         92
+                         91
+                         90
+                         89
+                         88
+                         87
+                         86
+                         85
+                         84
+                         83
+                         82
+                         81
+                         80
+                         79
+                         78
+                         77
+                         76
+                         75
+                         74
+                         73
+                         72
+                         71
+                         70
+                         69
+                         68
+                         67
+                         66
+                         65
+                         64
                          63
                          62
                          61
@@ -82,81 +520,520 @@ advancing to distance:   65
 
 ff: found legal plan as follows
 
-step    0: MOVER ROVER0 AL2 AS1
-        1: CARGAR P0 ROVER1 AS1
-        2: CARGAR P1 ROVER1 AS1
-        3: CARGAR P4 ROVER1 AS1
-        4: CARGAR P7 ROVER1 AS1
-        5: MOVER ROVER1 AS1 AL2
-        6: CARGAR S0 ROVER1 AL2
-        7: CARGAR S1 ROVER1 AL2
-        8: CARGAR S2 ROVER1 AL2
-        9: CARGAR S3 ROVER1 AL2
-       10: CARGAR S4 ROVER1 AL2
-       11: CARGAR S5 ROVER1 AL2
-       12: CARGAR S6 ROVER1 AL2
-       13: CARGAR S7 ROVER1 AL2
-       14: CARGAR S8 ROVER1 AL2
-       15: CARGAR S9 ROVER1 AL2
-       16: CARGAR S10 ROVER1 AL2
-       17: CARGAR S11 ROVER1 AL2
-       18: CARGAR S12 ROVER1 AL2
-       19: CARGAR S13 ROVER1 AL2
-       20: CARGAR S14 ROVER1 AL2
-       21: CARGAR S15 ROVER1 AL2
-       22: CARGAR S16 ROVER1 AL2
-       23: CARGAR S17 ROVER1 AL2
-       24: CARGAR S18 ROVER1 AL2
-       25: CARGAR S19 ROVER1 AL2
-       26: MOVER ROVER1 AL2 AS3
-       27: CARGAR P2 ROVER1 AS3
-       28: CARGAR P6 ROVER1 AS3
-       29: DESCARGAR P0 ROVER1 AS3
-       30: DESCARGAR P4 ROVER1 AS3
-       31: DESCARGAR S4 ROVER1 AS3
-       32: DESCARGAR S6 ROVER1 AS3
-       33: DESCARGAR S11 ROVER1 AS3
-       34: DESCARGAR S18 ROVER1 AS3
-       35: MOVER ROVER1 AS3 AS4
-       36: CARGAR P3 ROVER1 AS4
-       37: CARGAR P5 ROVER1 AS4
-       38: CARGAR P8 ROVER1 AS4
-       39: CARGAR P9 ROVER1 AS4
-       40: DESCARGAR P1 ROVER1 AS4
-       41: DESCARGAR P2 ROVER1 AS4
-       42: DESCARGAR P6 ROVER1 AS4
-       43: DESCARGAR P7 ROVER1 AS4
-       44: DESCARGAR S2 ROVER1 AS4
-       45: DESCARGAR S3 ROVER1 AS4
-       46: DESCARGAR S5 ROVER1 AS4
-       47: DESCARGAR S8 ROVER1 AS4
-       48: DESCARGAR S9 ROVER1 AS4
-       49: DESCARGAR S17 ROVER1 AS4
-       50: MOVER ROVER1 AS4 AS3
-       51: DESCARGAR P5 ROVER1 AS3
-       52: MOVER ROVER1 AS3 AL2
-       53: MOVER ROVER1 AL2 AS1
-       54: DESCARGAR S0 ROVER1 AS1
-       55: DESCARGAR S1 ROVER1 AS1
-       56: DESCARGAR S7 ROVER1 AS1
-       57: DESCARGAR S10 ROVER1 AS1
-       58: DESCARGAR S12 ROVER1 AS1
-       59: DESCARGAR S13 ROVER1 AS1
-       60: DESCARGAR S14 ROVER1 AS1
-       61: DESCARGAR S15 ROVER1 AS1
-       62: DESCARGAR S16 ROVER1 AS1
-       63: DESCARGAR S19 ROVER1 AS1
-       64: DESCARGAR P3 ROVER1 AS1
-       65: DESCARGAR P8 ROVER1 AS1
-       66: DESCARGAR P9 ROVER1 AS1
+step    0: CARGAR P7 ROVER0 AS3
+        1: CARGAR P12 ROVER0 AS3
+        2: CARGAR P14 ROVER0 AS3
+        3: CARGAR P16 ROVER0 AS3
+        4: CARGAR P22 ROVER0 AS3
+        5: CARGAR P23 ROVER0 AS3
+        6: CARGAR P25 ROVER0 AS3
+        7: CARGAR P26 ROVER0 AS3
+        8: CARGAR P31 ROVER0 AS3
+        9: CARGAR P34 ROVER0 AS3
+       10: CARGAR P36 ROVER0 AS3
+       11: CARGAR P40 ROVER0 AS3
+       12: CARGAR P41 ROVER0 AS3
+       13: CARGAR P43 ROVER0 AS3
+       14: CARGAR P44 ROVER0 AS3
+       15: CARGAR P46 ROVER0 AS3
+       16: CARGAR P52 ROVER0 AS3
+       17: CARGAR P55 ROVER0 AS3
+       18: CARGAR P56 ROVER0 AS3
+       19: CARGAR P58 ROVER0 AS3
+       20: CARGAR P60 ROVER0 AS3
+       21: CARGAR P63 ROVER0 AS3
+       22: CARGAR P64 ROVER0 AS3
+       23: CARGAR P68 ROVER0 AS3
+       24: CARGAR P70 ROVER0 AS3
+       25: CARGAR P71 ROVER0 AS3
+       26: CARGAR P73 ROVER0 AS3
+       27: CARGAR P74 ROVER0 AS3
+       28: CARGAR P76 ROVER0 AS3
+       29: CARGAR P77 ROVER0 AS3
+       30: CARGAR P79 ROVER0 AS3
+       31: CARGAR P80 ROVER0 AS3
+       32: CARGAR P81 ROVER0 AS3
+       33: CARGAR P83 ROVER0 AS3
+       34: CARGAR P85 ROVER0 AS3
+       35: CARGAR P86 ROVER0 AS3
+       36: CARGAR P87 ROVER0 AS3
+       37: CARGAR P88 ROVER0 AS3
+       38: CARGAR P90 ROVER0 AS3
+       39: CARGAR P93 ROVER0 AS3
+       40: CARGAR P94 ROVER0 AS3
+       41: CARGAR P95 ROVER0 AS3
+       42: CARGAR P97 ROVER0 AS3
+       43: CARGAR P98 ROVER0 AS3
+       44: CARGAR P100 ROVER0 AS3
+       45: CARGAR P107 ROVER0 AS3
+       46: CARGAR P108 ROVER0 AS3
+       47: CARGAR P109 ROVER0 AS3
+       48: CARGAR P110 ROVER0 AS3
+       49: CARGAR P114 ROVER0 AS3
+       50: CARGAR P115 ROVER0 AS3
+       51: CARGAR P116 ROVER0 AS3
+       52: CARGAR P120 ROVER0 AS3
+       53: CARGAR P121 ROVER0 AS3
+       54: CARGAR P122 ROVER0 AS3
+       55: MOVER ROVER0 AS3 AL2
+       56: CARGAR S0 ROVER0 AL2
+       57: CARGAR S1 ROVER0 AL2
+       58: CARGAR S2 ROVER0 AL2
+       59: CARGAR S3 ROVER0 AL2
+       60: CARGAR S4 ROVER0 AL2
+       61: CARGAR S5 ROVER0 AL2
+       62: CARGAR S6 ROVER0 AL2
+       63: CARGAR S7 ROVER0 AL2
+       64: CARGAR S8 ROVER0 AL2
+       65: CARGAR S9 ROVER0 AL2
+       66: CARGAR S10 ROVER0 AL2
+       67: CARGAR S11 ROVER0 AL2
+       68: CARGAR S12 ROVER0 AL2
+       69: CARGAR S13 ROVER0 AL2
+       70: CARGAR S14 ROVER0 AL2
+       71: CARGAR S15 ROVER0 AL2
+       72: CARGAR S16 ROVER0 AL2
+       73: CARGAR S17 ROVER0 AL2
+       74: CARGAR S18 ROVER0 AL2
+       75: CARGAR S19 ROVER0 AL2
+       76: CARGAR S20 ROVER0 AL2
+       77: CARGAR S21 ROVER0 AL2
+       78: CARGAR S22 ROVER0 AL2
+       79: CARGAR S23 ROVER0 AL2
+       80: CARGAR S24 ROVER0 AL2
+       81: CARGAR S25 ROVER0 AL2
+       82: CARGAR S26 ROVER0 AL2
+       83: CARGAR S27 ROVER0 AL2
+       84: CARGAR S28 ROVER0 AL2
+       85: CARGAR S29 ROVER0 AL2
+       86: CARGAR S30 ROVER0 AL2
+       87: CARGAR S31 ROVER0 AL2
+       88: CARGAR S32 ROVER0 AL2
+       89: CARGAR S33 ROVER0 AL2
+       90: CARGAR S34 ROVER0 AL2
+       91: CARGAR S35 ROVER0 AL2
+       92: CARGAR S36 ROVER0 AL2
+       93: CARGAR S37 ROVER0 AL2
+       94: CARGAR S38 ROVER0 AL2
+       95: CARGAR S39 ROVER0 AL2
+       96: CARGAR S40 ROVER0 AL2
+       97: CARGAR S41 ROVER0 AL2
+       98: CARGAR S42 ROVER0 AL2
+       99: CARGAR S43 ROVER0 AL2
+      100: CARGAR S44 ROVER0 AL2
+      101: CARGAR S45 ROVER0 AL2
+      102: CARGAR S46 ROVER0 AL2
+      103: CARGAR S47 ROVER0 AL2
+      104: CARGAR S48 ROVER0 AL2
+      105: CARGAR S49 ROVER0 AL2
+      106: CARGAR S50 ROVER0 AL2
+      107: CARGAR S51 ROVER0 AL2
+      108: CARGAR S52 ROVER0 AL2
+      109: CARGAR S53 ROVER0 AL2
+      110: CARGAR S54 ROVER0 AL2
+      111: CARGAR S55 ROVER0 AL2
+      112: CARGAR S56 ROVER0 AL2
+      113: CARGAR S57 ROVER0 AL2
+      114: CARGAR S58 ROVER0 AL2
+      115: CARGAR S59 ROVER0 AL2
+      116: CARGAR S60 ROVER0 AL2
+      117: CARGAR S61 ROVER0 AL2
+      118: CARGAR S62 ROVER0 AL2
+      119: CARGAR S63 ROVER0 AL2
+      120: CARGAR S64 ROVER0 AL2
+      121: CARGAR S65 ROVER0 AL2
+      122: CARGAR S66 ROVER0 AL2
+      123: CARGAR S67 ROVER0 AL2
+      124: CARGAR S68 ROVER0 AL2
+      125: CARGAR S69 ROVER0 AL2
+      126: CARGAR S70 ROVER0 AL2
+      127: CARGAR S71 ROVER0 AL2
+      128: CARGAR S72 ROVER0 AL2
+      129: CARGAR S73 ROVER0 AL2
+      130: CARGAR S74 ROVER0 AL2
+      131: CARGAR S75 ROVER0 AL2
+      132: CARGAR S76 ROVER0 AL2
+      133: CARGAR S77 ROVER0 AL2
+      134: CARGAR S78 ROVER0 AL2
+      135: CARGAR S79 ROVER0 AL2
+      136: CARGAR S80 ROVER0 AL2
+      137: CARGAR S81 ROVER0 AL2
+      138: CARGAR S82 ROVER0 AL2
+      139: CARGAR S83 ROVER0 AL2
+      140: CARGAR S84 ROVER0 AL2
+      141: CARGAR S85 ROVER0 AL2
+      142: CARGAR S86 ROVER0 AL2
+      143: CARGAR S87 ROVER0 AL2
+      144: CARGAR S88 ROVER0 AL2
+      145: CARGAR S89 ROVER0 AL2
+      146: CARGAR S90 ROVER0 AL2
+      147: CARGAR S91 ROVER0 AL2
+      148: CARGAR S92 ROVER0 AL2
+      149: CARGAR S93 ROVER0 AL2
+      150: CARGAR S94 ROVER0 AL2
+      151: CARGAR S95 ROVER0 AL2
+      152: CARGAR S96 ROVER0 AL2
+      153: CARGAR S97 ROVER0 AL2
+      154: CARGAR S98 ROVER0 AL2
+      155: CARGAR S99 ROVER0 AL2
+      156: CARGAR S100 ROVER0 AL2
+      157: CARGAR S101 ROVER0 AL2
+      158: CARGAR S102 ROVER0 AL2
+      159: CARGAR S103 ROVER0 AL2
+      160: CARGAR S104 ROVER0 AL2
+      161: CARGAR S105 ROVER0 AL2
+      162: CARGAR S106 ROVER0 AL2
+      163: CARGAR S107 ROVER0 AL2
+      164: CARGAR S108 ROVER0 AL2
+      165: CARGAR S109 ROVER0 AL2
+      166: CARGAR S110 ROVER0 AL2
+      167: CARGAR S111 ROVER0 AL2
+      168: CARGAR S112 ROVER0 AL2
+      169: CARGAR S113 ROVER0 AL2
+      170: CARGAR S114 ROVER0 AL2
+      171: CARGAR S115 ROVER0 AL2
+      172: CARGAR S116 ROVER0 AL2
+      173: CARGAR S117 ROVER0 AL2
+      174: CARGAR S118 ROVER0 AL2
+      175: CARGAR S119 ROVER0 AL2
+      176: CARGAR S120 ROVER0 AL2
+      177: CARGAR S121 ROVER0 AL2
+      178: CARGAR S122 ROVER0 AL2
+      179: CARGAR S123 ROVER0 AL2
+      180: CARGAR S124 ROVER0 AL2
+      181: MOVER ROVER0 AL2 AS3
+      182: DESCARGAR S4 ROVER0 AS3
+      183: DESCARGAR S7 ROVER0 AS3
+      184: DESCARGAR S9 ROVER0 AS3
+      185: DESCARGAR S11 ROVER0 AS3
+      186: DESCARGAR S14 ROVER0 AS3
+      187: DESCARGAR S15 ROVER0 AS3
+      188: DESCARGAR S18 ROVER0 AS3
+      189: DESCARGAR S19 ROVER0 AS3
+      190: DESCARGAR S20 ROVER0 AS3
+      191: DESCARGAR S22 ROVER0 AS3
+      192: DESCARGAR S25 ROVER0 AS3
+      193: DESCARGAR S28 ROVER0 AS3
+      194: DESCARGAR S29 ROVER0 AS3
+      195: DESCARGAR S31 ROVER0 AS3
+      196: DESCARGAR S33 ROVER0 AS3
+      197: DESCARGAR S34 ROVER0 AS3
+      198: DESCARGAR S39 ROVER0 AS3
+      199: DESCARGAR S44 ROVER0 AS3
+      200: DESCARGAR S48 ROVER0 AS3
+      201: DESCARGAR S51 ROVER0 AS3
+      202: DESCARGAR S55 ROVER0 AS3
+      203: DESCARGAR S56 ROVER0 AS3
+      204: DESCARGAR S57 ROVER0 AS3
+      205: DESCARGAR S58 ROVER0 AS3
+      206: DESCARGAR S59 ROVER0 AS3
+      207: DESCARGAR S61 ROVER0 AS3
+      208: DESCARGAR S63 ROVER0 AS3
+      209: DESCARGAR S64 ROVER0 AS3
+      210: DESCARGAR S66 ROVER0 AS3
+      211: DESCARGAR S68 ROVER0 AS3
+      212: DESCARGAR S71 ROVER0 AS3
+      213: DESCARGAR S73 ROVER0 AS3
+      214: DESCARGAR S74 ROVER0 AS3
+      215: DESCARGAR S76 ROVER0 AS3
+      216: DESCARGAR S77 ROVER0 AS3
+      217: DESCARGAR S78 ROVER0 AS3
+      218: DESCARGAR S81 ROVER0 AS3
+      219: DESCARGAR S83 ROVER0 AS3
+      220: DESCARGAR S84 ROVER0 AS3
+      221: DESCARGAR S86 ROVER0 AS3
+      222: DESCARGAR S87 ROVER0 AS3
+      223: DESCARGAR S89 ROVER0 AS3
+      224: DESCARGAR S90 ROVER0 AS3
+      225: DESCARGAR S91 ROVER0 AS3
+      226: DESCARGAR S92 ROVER0 AS3
+      227: DESCARGAR S94 ROVER0 AS3
+      228: DESCARGAR S96 ROVER0 AS3
+      229: DESCARGAR S97 ROVER0 AS3
+      230: DESCARGAR S99 ROVER0 AS3
+      231: DESCARGAR S104 ROVER0 AS3
+      232: DESCARGAR S106 ROVER0 AS3
+      233: DESCARGAR S108 ROVER0 AS3
+      234: DESCARGAR S109 ROVER0 AS3
+      235: DESCARGAR S111 ROVER0 AS3
+      236: DESCARGAR S113 ROVER0 AS3
+      237: DESCARGAR S115 ROVER0 AS3
+      238: DESCARGAR S116 ROVER0 AS3
+      239: DESCARGAR S118 ROVER0 AS3
+      240: DESCARGAR S119 ROVER0 AS3
+      241: DESCARGAR S123 ROVER0 AS3
+      242: MOVER ROVER0 AS3 AL2
+      243: MOVER ROVER0 AL2 AS1
+      244: CARGAR P0 ROVER0 AS1
+      245: CARGAR P1 ROVER0 AS1
+      246: CARGAR P2 ROVER0 AS1
+      247: CARGAR P3 ROVER0 AS1
+      248: CARGAR P4 ROVER0 AS1
+      249: CARGAR P5 ROVER0 AS1
+      250: CARGAR P6 ROVER0 AS1
+      251: CARGAR P8 ROVER0 AS1
+      252: CARGAR P9 ROVER0 AS1
+      253: CARGAR P10 ROVER0 AS1
+      254: CARGAR P11 ROVER0 AS1
+      255: CARGAR P13 ROVER0 AS1
+      256: CARGAR P15 ROVER0 AS1
+      257: CARGAR P17 ROVER0 AS1
+      258: CARGAR P18 ROVER0 AS1
+      259: CARGAR P19 ROVER0 AS1
+      260: CARGAR P20 ROVER0 AS1
+      261: CARGAR P21 ROVER0 AS1
+      262: CARGAR P24 ROVER0 AS1
+      263: CARGAR P27 ROVER0 AS1
+      264: CARGAR P28 ROVER0 AS1
+      265: CARGAR P29 ROVER0 AS1
+      266: CARGAR P30 ROVER0 AS1
+      267: CARGAR P32 ROVER0 AS1
+      268: CARGAR P33 ROVER0 AS1
+      269: CARGAR P35 ROVER0 AS1
+      270: CARGAR P37 ROVER0 AS1
+      271: CARGAR P38 ROVER0 AS1
+      272: CARGAR P39 ROVER0 AS1
+      273: CARGAR P42 ROVER0 AS1
+      274: CARGAR P45 ROVER0 AS1
+      275: CARGAR P47 ROVER0 AS1
+      276: CARGAR P48 ROVER0 AS1
+      277: CARGAR P49 ROVER0 AS1
+      278: CARGAR P50 ROVER0 AS1
+      279: CARGAR P51 ROVER0 AS1
+      280: CARGAR P53 ROVER0 AS1
+      281: CARGAR P54 ROVER0 AS1
+      282: CARGAR P57 ROVER0 AS1
+      283: CARGAR P59 ROVER0 AS1
+      284: CARGAR P61 ROVER0 AS1
+      285: CARGAR P62 ROVER0 AS1
+      286: CARGAR P65 ROVER0 AS1
+      287: CARGAR P66 ROVER0 AS1
+      288: CARGAR P67 ROVER0 AS1
+      289: CARGAR P69 ROVER0 AS1
+      290: CARGAR P72 ROVER0 AS1
+      291: CARGAR P75 ROVER0 AS1
+      292: CARGAR P78 ROVER0 AS1
+      293: CARGAR P82 ROVER0 AS1
+      294: CARGAR P84 ROVER0 AS1
+      295: CARGAR P89 ROVER0 AS1
+      296: CARGAR P91 ROVER0 AS1
+      297: CARGAR P92 ROVER0 AS1
+      298: CARGAR P96 ROVER0 AS1
+      299: CARGAR P99 ROVER0 AS1
+      300: CARGAR P101 ROVER0 AS1
+      301: CARGAR P102 ROVER0 AS1
+      302: CARGAR P103 ROVER0 AS1
+      303: CARGAR P104 ROVER0 AS1
+      304: CARGAR P105 ROVER0 AS1
+      305: CARGAR P106 ROVER0 AS1
+      306: CARGAR P111 ROVER0 AS1
+      307: CARGAR P112 ROVER0 AS1
+      308: CARGAR P113 ROVER0 AS1
+      309: CARGAR P117 ROVER0 AS1
+      310: CARGAR P118 ROVER0 AS1
+      311: CARGAR P119 ROVER0 AS1
+      312: CARGAR P123 ROVER0 AS1
+      313: CARGAR P124 ROVER0 AS1
+      314: DESCARGAR P7 ROVER0 AS1
+      315: DESCARGAR P12 ROVER0 AS1
+      316: DESCARGAR P14 ROVER0 AS1
+      317: DESCARGAR P16 ROVER0 AS1
+      318: DESCARGAR P22 ROVER0 AS1
+      319: DESCARGAR P23 ROVER0 AS1
+      320: DESCARGAR P25 ROVER0 AS1
+      321: DESCARGAR P26 ROVER0 AS1
+      322: DESCARGAR P31 ROVER0 AS1
+      323: DESCARGAR P34 ROVER0 AS1
+      324: DESCARGAR P36 ROVER0 AS1
+      325: DESCARGAR P40 ROVER0 AS1
+      326: DESCARGAR P41 ROVER0 AS1
+      327: DESCARGAR P43 ROVER0 AS1
+      328: DESCARGAR P44 ROVER0 AS1
+      329: DESCARGAR P46 ROVER0 AS1
+      330: DESCARGAR P52 ROVER0 AS1
+      331: DESCARGAR P55 ROVER0 AS1
+      332: DESCARGAR P56 ROVER0 AS1
+      333: DESCARGAR P58 ROVER0 AS1
+      334: DESCARGAR P60 ROVER0 AS1
+      335: DESCARGAR P63 ROVER0 AS1
+      336: DESCARGAR P64 ROVER0 AS1
+      337: DESCARGAR P68 ROVER0 AS1
+      338: DESCARGAR P70 ROVER0 AS1
+      339: DESCARGAR P71 ROVER0 AS1
+      340: DESCARGAR P73 ROVER0 AS1
+      341: DESCARGAR P74 ROVER0 AS1
+      342: DESCARGAR P76 ROVER0 AS1
+      343: DESCARGAR P77 ROVER0 AS1
+      344: DESCARGAR P79 ROVER0 AS1
+      345: DESCARGAR P80 ROVER0 AS1
+      346: DESCARGAR P81 ROVER0 AS1
+      347: DESCARGAR P83 ROVER0 AS1
+      348: DESCARGAR P85 ROVER0 AS1
+      349: DESCARGAR P86 ROVER0 AS1
+      350: DESCARGAR P87 ROVER0 AS1
+      351: DESCARGAR P88 ROVER0 AS1
+      352: DESCARGAR P90 ROVER0 AS1
+      353: DESCARGAR P93 ROVER0 AS1
+      354: DESCARGAR P94 ROVER0 AS1
+      355: DESCARGAR P95 ROVER0 AS1
+      356: DESCARGAR P97 ROVER0 AS1
+      357: DESCARGAR P98 ROVER0 AS1
+      358: DESCARGAR P100 ROVER0 AS1
+      359: DESCARGAR P107 ROVER0 AS1
+      360: DESCARGAR P108 ROVER0 AS1
+      361: DESCARGAR P109 ROVER0 AS1
+      362: DESCARGAR P110 ROVER0 AS1
+      363: DESCARGAR P114 ROVER0 AS1
+      364: DESCARGAR P115 ROVER0 AS1
+      365: DESCARGAR P116 ROVER0 AS1
+      366: DESCARGAR P120 ROVER0 AS1
+      367: DESCARGAR P121 ROVER0 AS1
+      368: DESCARGAR P122 ROVER0 AS1
+      369: DESCARGAR S0 ROVER0 AS1
+      370: DESCARGAR S1 ROVER0 AS1
+      371: DESCARGAR S2 ROVER0 AS1
+      372: DESCARGAR S3 ROVER0 AS1
+      373: DESCARGAR S5 ROVER0 AS1
+      374: DESCARGAR S6 ROVER0 AS1
+      375: DESCARGAR S8 ROVER0 AS1
+      376: DESCARGAR S10 ROVER0 AS1
+      377: DESCARGAR S12 ROVER0 AS1
+      378: DESCARGAR S13 ROVER0 AS1
+      379: DESCARGAR S16 ROVER0 AS1
+      380: DESCARGAR S17 ROVER0 AS1
+      381: DESCARGAR S21 ROVER0 AS1
+      382: DESCARGAR S23 ROVER0 AS1
+      383: DESCARGAR S24 ROVER0 AS1
+      384: DESCARGAR S26 ROVER0 AS1
+      385: DESCARGAR S27 ROVER0 AS1
+      386: DESCARGAR S30 ROVER0 AS1
+      387: DESCARGAR S32 ROVER0 AS1
+      388: DESCARGAR S35 ROVER0 AS1
+      389: DESCARGAR S36 ROVER0 AS1
+      390: DESCARGAR S37 ROVER0 AS1
+      391: DESCARGAR S38 ROVER0 AS1
+      392: DESCARGAR S40 ROVER0 AS1
+      393: DESCARGAR S41 ROVER0 AS1
+      394: DESCARGAR S42 ROVER0 AS1
+      395: DESCARGAR S43 ROVER0 AS1
+      396: DESCARGAR S45 ROVER0 AS1
+      397: DESCARGAR S46 ROVER0 AS1
+      398: DESCARGAR S47 ROVER0 AS1
+      399: DESCARGAR S49 ROVER0 AS1
+      400: DESCARGAR S50 ROVER0 AS1
+      401: DESCARGAR S52 ROVER0 AS1
+      402: DESCARGAR S53 ROVER0 AS1
+      403: DESCARGAR S54 ROVER0 AS1
+      404: DESCARGAR S60 ROVER0 AS1
+      405: DESCARGAR S62 ROVER0 AS1
+      406: DESCARGAR S65 ROVER0 AS1
+      407: DESCARGAR S67 ROVER0 AS1
+      408: DESCARGAR S69 ROVER0 AS1
+      409: DESCARGAR S70 ROVER0 AS1
+      410: DESCARGAR S72 ROVER0 AS1
+      411: DESCARGAR S75 ROVER0 AS1
+      412: DESCARGAR S79 ROVER0 AS1
+      413: DESCARGAR S80 ROVER0 AS1
+      414: DESCARGAR S82 ROVER0 AS1
+      415: DESCARGAR S85 ROVER0 AS1
+      416: DESCARGAR S88 ROVER0 AS1
+      417: DESCARGAR S93 ROVER0 AS1
+      418: DESCARGAR S95 ROVER0 AS1
+      419: DESCARGAR S98 ROVER0 AS1
+      420: DESCARGAR S100 ROVER0 AS1
+      421: DESCARGAR S101 ROVER0 AS1
+      422: DESCARGAR S102 ROVER0 AS1
+      423: DESCARGAR S103 ROVER0 AS1
+      424: DESCARGAR S105 ROVER0 AS1
+      425: DESCARGAR S107 ROVER0 AS1
+      426: DESCARGAR S110 ROVER0 AS1
+      427: DESCARGAR S112 ROVER0 AS1
+      428: DESCARGAR S114 ROVER0 AS1
+      429: DESCARGAR S117 ROVER0 AS1
+      430: DESCARGAR S120 ROVER0 AS1
+      431: DESCARGAR S121 ROVER0 AS1
+      432: DESCARGAR S122 ROVER0 AS1
+      433: DESCARGAR S124 ROVER0 AS1
+      434: MOVER ROVER0 AS1 AL2
+      435: MOVER ROVER0 AL2 AS3
+      436: DESCARGAR P0 ROVER0 AS3
+      437: DESCARGAR P1 ROVER0 AS3
+      438: DESCARGAR P2 ROVER0 AS3
+      439: DESCARGAR P3 ROVER0 AS3
+      440: DESCARGAR P4 ROVER0 AS3
+      441: DESCARGAR P5 ROVER0 AS3
+      442: DESCARGAR P6 ROVER0 AS3
+      443: DESCARGAR P8 ROVER0 AS3
+      444: DESCARGAR P9 ROVER0 AS3
+      445: DESCARGAR P10 ROVER0 AS3
+      446: DESCARGAR P11 ROVER0 AS3
+      447: DESCARGAR P13 ROVER0 AS3
+      448: DESCARGAR P15 ROVER0 AS3
+      449: DESCARGAR P17 ROVER0 AS3
+      450: DESCARGAR P18 ROVER0 AS3
+      451: DESCARGAR P19 ROVER0 AS3
+      452: DESCARGAR P20 ROVER0 AS3
+      453: DESCARGAR P21 ROVER0 AS3
+      454: DESCARGAR P24 ROVER0 AS3
+      455: DESCARGAR P27 ROVER0 AS3
+      456: DESCARGAR P28 ROVER0 AS3
+      457: DESCARGAR P29 ROVER0 AS3
+      458: DESCARGAR P30 ROVER0 AS3
+      459: DESCARGAR P32 ROVER0 AS3
+      460: DESCARGAR P33 ROVER0 AS3
+      461: DESCARGAR P35 ROVER0 AS3
+      462: DESCARGAR P37 ROVER0 AS3
+      463: DESCARGAR P38 ROVER0 AS3
+      464: DESCARGAR P39 ROVER0 AS3
+      465: DESCARGAR P42 ROVER0 AS3
+      466: DESCARGAR P45 ROVER0 AS3
+      467: DESCARGAR P47 ROVER0 AS3
+      468: DESCARGAR P48 ROVER0 AS3
+      469: DESCARGAR P49 ROVER0 AS3
+      470: DESCARGAR P50 ROVER0 AS3
+      471: DESCARGAR P51 ROVER0 AS3
+      472: DESCARGAR P53 ROVER0 AS3
+      473: DESCARGAR P54 ROVER0 AS3
+      474: DESCARGAR P57 ROVER0 AS3
+      475: DESCARGAR P59 ROVER0 AS3
+      476: DESCARGAR P61 ROVER0 AS3
+      477: DESCARGAR P62 ROVER0 AS3
+      478: DESCARGAR P65 ROVER0 AS3
+      479: DESCARGAR P66 ROVER0 AS3
+      480: DESCARGAR P67 ROVER0 AS3
+      481: DESCARGAR P69 ROVER0 AS3
+      482: DESCARGAR P72 ROVER0 AS3
+      483: DESCARGAR P75 ROVER0 AS3
+      484: DESCARGAR P78 ROVER0 AS3
+      485: DESCARGAR P82 ROVER0 AS3
+      486: DESCARGAR P84 ROVER0 AS3
+      487: DESCARGAR P89 ROVER0 AS3
+      488: DESCARGAR P91 ROVER0 AS3
+      489: DESCARGAR P92 ROVER0 AS3
+      490: DESCARGAR P96 ROVER0 AS3
+      491: DESCARGAR P99 ROVER0 AS3
+      492: DESCARGAR P101 ROVER0 AS3
+      493: DESCARGAR P102 ROVER0 AS3
+      494: DESCARGAR P103 ROVER0 AS3
+      495: DESCARGAR P104 ROVER0 AS3
+      496: DESCARGAR P105 ROVER0 AS3
+      497: DESCARGAR P106 ROVER0 AS3
+      498: DESCARGAR P111 ROVER0 AS3
+      499: DESCARGAR P112 ROVER0 AS3
+      500: DESCARGAR P113 ROVER0 AS3
+      501: DESCARGAR P117 ROVER0 AS3
+      502: DESCARGAR P118 ROVER0 AS3
+      503: DESCARGAR P119 ROVER0 AS3
+      504: DESCARGAR P123 ROVER0 AS3
+      505: DESCARGAR P124 ROVER0 AS3
      
 
-time spent:    0.00 seconds instantiating 432 easy, 0 hard action templates
-               0.00 seconds reachability analysis, yielding 158 facts and 132 actions
-               0.00 seconds creating final representation with 158 relevant facts, 0 relevant fluents
+time spent:    0.16 seconds instantiating 1254 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 1003 facts and 504 actions
+               0.00 seconds creating final representation with 1003 relevant facts, 0 relevant fluents
                0.00 seconds computing LNF
-               0.15 seconds building connectivity graph
-               0.16 seconds searching, evaluating 648 states, to a max depth of 0
-               0.31 seconds total time
+               0.00 seconds building connectivity graph
+              37.33 seconds searching, evaluating 32504 states, to a max depth of 0
+              37.49 seconds total time
 
 "
