@@ -234,3 +234,6 @@ class Problem():
         result = [len(steps), times[6][0], times[0][3], times[0][5], times[1]
                   [5], times[1][8], times[2][6], times[2][9], times[5][4], times[5][11]]
         return steps, times, result
+
+
+# measure-command{"metricff"}
