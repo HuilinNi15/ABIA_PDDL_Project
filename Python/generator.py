@@ -10,10 +10,10 @@ class Problem():
         self.level = level
         self.domain = domain
         self.problem = problem
-        self.paths = self.find_paths()
+        self.paths = self.__find_paths()
 
 
-    def find_paths(self) -> dict:
+    def __find_paths(self) -> dict:
         project_path = str(pathlib.Path().resolve())
         file_path = str(pathlib.Path(__file__).parent.resolve())
 
