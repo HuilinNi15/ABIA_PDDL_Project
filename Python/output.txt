@@ -14,574 +14,438 @@ checking for cyclic := effects --- OK.
 ff: search configuration is  best-first on 1*g(s) + 5*h(s) where
     metric is  plan length
 
-advancing to distance: 1106
-                       1105
-                       1104
-                       1103
-                       1102
-                       1101
-                       1100
-                       1099
-                       1098
-                       1097
-                       1096
-                       1095
-                       1094
-                       1093
-                       1092
-                       1091
-                       1090
-                       1089
-                       1088
-                       1087
-                       1086
-                       1085
-                       1084
-                       1083
-                       1082
-                       1081
-                       1080
-                       1079
-                       1078
-                       1077
-                       1076
-                       1075
-                       1074
-                       1073
-                       1072
-                       1071
-                       1070
-                       1069
-                       1068
-                       1067
-                       1066
-                       1065
-                       1064
-                       1063
-                       1062
-                       1061
-                       1060
-                       1059
-                       1058
-                       1057
-                       1056
-                       1055
-                       1054
-                       1053
-                       1052
-                       1051
-                       1050
-                       1049
-                       1048
-                       1047
-                       1046
-                       1045
-                       1044
-                       1043
-                       1042
-                       1041
-                       1040
-                       1039
-                       1038
-                       1037
-                       1036
-                       1035
-                       1034
-                       1033
-                       1032
-                       1031
-                       1030
-                       1029
-                       1028
-                       1027
-                       1026
-                       1025
-                       1024
-                       1023
-                       1022
-                       1021
-                       1020
-                       1019
-                       1018
-                       1017
-                       1016
-                       1015
-                       1014
-                       1013
-                       1012
-                       1011
-                       1010
-                       1009
-                       1008
-                       1007
-                       1006
-                       1005
-                       1004
-                       1003
-                       1002
-                       1001
-                       1000
-                        999
-                        998
-                        997
-                        996
-                        995
-                        994
-                        993
-                        992
-                        991
-                        990
-                        989
-                        988
-                        987
-                        986
-                        985
-                        984
-                        983
-                        982
-                        981
-                        980
-                        979
-                        978
-                        977
-                        976
-                        975
-                        974
-                        973
-                        972
-                        971
-                        970
-                        969
-                        968
-                        967
-                        966
-                        965
-                        964
-                        963
-                        962
-                        961
-                        960
-                        959
-                        958
-                        957
-                        956
-                        955
-                        954
-                        953
-                        952
-                        951
-                        950
-                        949
-                        948
-                        947
-                        946
-                        945
-                        944
-                        943
-                        942
-                        941
-                        940
-                        939
-                        938
-                        937
-                        936
-                        935
-                        934
-                        933
-                        932
-                        931
-                        930
-                        929
-                        928
-                        927
-                        926
-                        925
-                        924
-                        923
-                        922
-                        921
-                        920
-                        919
-                        918
-                        917
-                        916
-                        915
-                        914
-                        913
-                        912
-                        911
-                        910
-                        909
-                        908
-                        907
-                        906
-                        905
-                        904
-                        903
-                        902
-                        901
-                        900
-                        899
-                        898
-                        897
-                        896
-                        895
-                        894
-                        893
-                        892
-                        891
-                        890
-                        889
-                        888
-                        887
-                        886
-                        885
-                        884
-                        883
-                        882
-                        881
-                        880
-                        879
-                        878
-                        877
-                        876
-                        875
-                        874
-                        873
-                        872
-                        871
-                        870
-                        869
-                        868
-                        867
-                        866
-                        865
-                        864
-                        863
-                        862
-                        861
-                        860
-                        859
-                        858
-                        857
-                        856
-                        855
-                        854
-                        853
-                        852
-                        851
-                        850
-                        849
-                        848
-                        847
-                        846
-                        845
-                        844
-                        843
-                        842
-                        841
-                        840
-                        839
-                        838
-                        837
-                        836
-                        835
-                        834
-                        833
-                        832
-                        831
-                        830
-                        829
-                        828
-                        827
-                        826
-                        825
-                        824
-                        823
-                        822
-                        821
-                        820
-                        819
-                        818
-                        817
-                        816
-                        815
-                        814
-                        813
-                        812
-                        811
-                        810
-                        809
-                        808
-                        807
-                        806
-                        805
-                        804
-                        803
-                        802
-                        801
-                        800
-                        799
-                        798
-                        797
-                        796
-                        795
-                        794
-                        793
-                        792
-                        791
-                        790
-                        789
-                        788
-                        787
-                        786
-                        785
-                        784
-                        783
-                        782
-                        781
-                        780
-                        779
-                        778
-                        777
-                        776
-                        775
-                        774
-                        773
-                        772
-                        771
-                        770
-                        769
-                        768
-                        767
-                        766
-                        765
-                        764
-                        763
-                        762
-                        761
-                        760
-                        759
-                        758
-                        757
-                        756
-                        755
-                        754
-                        753
-                        752
-                        751
-                        750
-                        749
-                        748
-                        747
-                        746
-                        745
-                        744
-                        743
-                        742
-                        741
-                        740
-                        739
-                        738
-                        737
-                        736
-                        735
-                        734
-                        733
-                        732
-                        731
-                        730
-                        729
-                        728
-                        727
-                        726
-                        725
-                        724
-                        723
-                        722
-                        721
-                        720
-                        719
-                        718
-                        717
-                        716
-                        715
-                        714
-                        713
-                        712
-                        711
-                        710
-                        709
-                        708
-                        707
-                        706
-                        705
-                        704
-                        703
-                        702
-                        701
-                        700
-                        699
-                        698
-                        697
-                        696
-                        695
-                        694
-                        693
-                        692
-                        691
-                        690
-                        689
-                        688
-                        687
-                        686
-                        685
-                        684
-                        683
-                        682
-                        681
-                        680
-                        679
-                        678
-                        677
-                        676
-                        675
-                        674
-                        673
-                        672
-                        671
-                        670
-                        669
-                        668
-                        667
-                        666
-                        665
-                        664
-                        663
-                        662
-                        661
-                        660
-                        659
-                        658
-                        657
-                        656
-                        655
-                        654
-                        653
-                        652
-                        651
-                        650
-                        649
-                        648
-                        647
-                        646
-                        645
-                        644
-                        643
-                        642
-                        641
-                        640
-                        639
-                        638
-                        637
-                        636
-                        635
-                        634
-                        633
-                        632
-                        631
-                        630
-                        629
-                        628
-                        627
-                        626
-                        625
-                        624
-                        623
-                        622
-                        621
-                        620
-                        619
-                        618
-                        617
-                        616
-                        615
-                        614
-                        613
-                        612
-                        611
-                        610
-                        609
-                        608
-                        607
-                        606
-                        605
-                        604
-                        603
-                        602
-                        601
-                        600
-                        599
-                        598
-                        597
-                        596
-                        595
-                        594
-                        593
-                        592
-                        591
-                        590
-                        589
-                        588
-                        587
-                        586
-                        585
-                        584
-                        583
-                        582
-                        581
-                        580
-                        579
-                        578
-                        577
-                        576
-                        575
-                        574
-                        573
-                        572
-                        571
-                        570
-                        569
-                        568
-                        567
-                        566
-                        565
-                        564
-                        563
-                        562
-                        561
-                        560
-                        559
-                        558
-                        557
-                        556
-                        555
-                        554
-                        553
-                        552
-                        551
-                        550
-                        549
-                        548
-                        547
-                        546
-                        545
-                        544
-                        543
-                        542
-                        541
-                        540
-                        539
-                        538
-                        537
-                        536"
+advancing to distance:  206
+                        205
+                        204
+                        203
+                        202
+                        201
+                        200
+                        199
+                        198
+                        197
+                        196
+                        195
+                        194
+                        193
+                        192
+                        191
+                        190
+                        189
+                        188
+                        187
+                        186
+                        185
+                        184
+                        183
+                        182
+                        181
+                        180
+                        179
+                        178
+                        177
+                        176
+                        175
+                        174
+                        173
+                        172
+                        171
+                        170
+                        169
+                        168
+                        167
+                        166
+                        165
+                        164
+                        163
+                        162
+                        161
+                        160
+                        159
+                        158
+                        157
+                        156
+                        155
+                        154
+                        153
+                        152
+                        151
+                        150
+                        149
+                        148
+                        147
+                        146
+                        145
+                        144
+                        143
+                        142
+                        141
+                        140
+                        139
+                        138
+                        137
+                        136
+                        135
+                        134
+                        133
+                        132
+                        131
+                        130
+                        129
+                        128
+                        127
+                        126
+                        125
+                        124
+                        123
+                        122
+                        121
+                        120
+                        119
+                        118
+                        117
+                        116
+                        115
+                        114
+                        113
+                        112
+                        111
+                        110
+                        109
+                        108
+                        107
+                        106
+                        105
+                        104
+                        103
+                        102
+                        101
+                        100
+                         99
+                         98
+                         97
+                         96
+                         95
+                         94
+                         93
+                         92
+                         91
+                         90
+                         89
+                         88
+                         87
+                         86
+                         85
+                         84
+                         83
+                         82
+                         81
+                         80
+                         79
+                         78
+                         77
+                         76
+                         75
+                         74
+                         73
+                         72
+                         71
+                         70
+                         69
+                         68
+                         67
+                         66
+                         65
+                         64
+                         63
+                         62
+                         61
+                         60
+                         59
+                         58
+                         57
+                         56
+                         55
+                         54
+                         53
+                         52
+                         51
+                         50
+                         49
+                         48
+                         47
+                         46
+                         45
+                         44
+                         43
+                         42
+                         41
+                         40
+                         39
+                         38
+                         37
+                         36
+                         35
+                         34
+                         33
+                         32
+                         31
+                         30
+                         29
+                         28
+                         27
+                         26
+                         25
+                         24
+                         23
+                         22
+                         21
+                         20
+                         19
+                         18
+                         17
+                         16
+                         15
+                         14
+                         13
+                         12
+                         11
+                         10
+                          9
+                          8
+                          7
+                          6
+                          5
+                          4
+                          3
+                          2
+                          1
+                          0
+
+ff: found legal plan as follows
+
+step    0: CARGAR P0 ROVER0 AS3
+        1: CARGAR P1 ROVER0 AS3
+        2: CARGAR P2 ROVER0 AS3
+        3: CARGAR P4 ROVER0 AS3
+        4: CARGAR P5 ROVER0 AS3
+        5: CARGAR P6 ROVER0 AS3
+        6: CARGAR P8 ROVER0 AS3
+        7: CARGAR P10 ROVER0 AS3
+        8: CARGAR P12 ROVER0 AS3
+        9: CARGAR P18 ROVER0 AS3
+       10: CARGAR P19 ROVER0 AS3
+       11: CARGAR P25 ROVER0 AS3
+       12: CARGAR P30 ROVER0 AS3
+       13: CARGAR P33 ROVER0 AS3
+       14: CARGAR P37 ROVER0 AS3
+       15: CARGAR P39 ROVER0 AS3
+       16: CARGAR P40 ROVER0 AS3
+       17: CARGAR P42 ROVER0 AS3
+       18: CARGAR P43 ROVER0 AS3
+       19: CARGAR P44 ROVER0 AS3
+       20: CARGAR P46 ROVER0 AS3
+       21: CARGAR P3 ROVER1 AS4
+       22: CARGAR P7 ROVER1 AS4
+       23: CARGAR P9 ROVER1 AS4
+       24: CARGAR P11 ROVER1 AS4
+       25: CARGAR P13 ROVER1 AS4
+       26: CARGAR P14 ROVER1 AS4
+       27: CARGAR P15 ROVER1 AS4
+       28: CARGAR P16 ROVER1 AS4
+       29: CARGAR P17 ROVER1 AS4
+       30: CARGAR P20 ROVER1 AS4
+       31: CARGAR P21 ROVER1 AS4
+       32: CARGAR P22 ROVER1 AS4
+       33: CARGAR P23 ROVER1 AS4
+       34: CARGAR P24 ROVER1 AS4
+       35: CARGAR P26 ROVER1 AS4
+       36: CARGAR P27 ROVER1 AS4
+       37: CARGAR P28 ROVER1 AS4
+       38: CARGAR P29 ROVER1 AS4
+       39: CARGAR P31 ROVER1 AS4
+       40: CARGAR P32 ROVER1 AS4
+       41: CARGAR P34 ROVER1 AS4
+       42: CARGAR P35 ROVER1 AS4
+       43: CARGAR P36 ROVER1 AS4
+       44: CARGAR P38 ROVER1 AS4
+       45: CARGAR P41 ROVER1 AS4
+       46: CARGAR P45 ROVER1 AS4
+       47: CARGAR P47 ROVER1 AS4
+       48: CARGAR P48 ROVER1 AS4
+       49: CARGAR P49 ROVER1 AS4
+       50: MOVER ROVER0 AS3 AS4
+       51: DESCARGAR P0 ROVER0 AS4
+       52: DESCARGAR P1 ROVER0 AS4
+       53: DESCARGAR P2 ROVER0 AS4
+       54: DESCARGAR P4 ROVER0 AS4
+       55: DESCARGAR P5 ROVER0 AS4
+       56: DESCARGAR P6 ROVER0 AS4
+       57: DESCARGAR P8 ROVER0 AS4
+       58: DESCARGAR P10 ROVER0 AS4
+       59: DESCARGAR P12 ROVER0 AS4
+       60: DESCARGAR P18 ROVER0 AS4
+       61: DESCARGAR P19 ROVER0 AS4
+       62: DESCARGAR P25 ROVER0 AS4
+       63: DESCARGAR P30 ROVER0 AS4
+       64: DESCARGAR P33 ROVER0 AS4
+       65: DESCARGAR P37 ROVER0 AS4
+       66: DESCARGAR P39 ROVER0 AS4
+       67: DESCARGAR P40 ROVER0 AS4
+       68: DESCARGAR P42 ROVER0 AS4
+       69: DESCARGAR P43 ROVER0 AS4
+       70: DESCARGAR P44 ROVER0 AS4
+       71: DESCARGAR P46 ROVER0 AS4
+       72: MOVER ROVER0 AS4 AL6
+       73: CARGAR S0 ROVER0 AL6
+       74: CARGAR S5 ROVER0 AL6
+       75: CARGAR S6 ROVER0 AL6
+       76: CARGAR S8 ROVER0 AL6
+       77: CARGAR S9 ROVER0 AL6
+       78: CARGAR S10 ROVER0 AL6
+       79: CARGAR S11 ROVER0 AL6
+       80: CARGAR S15 ROVER0 AL6
+       81: CARGAR S24 ROVER0 AL6
+       82: CARGAR S27 ROVER0 AL6
+       83: CARGAR S28 ROVER0 AL6
+       84: CARGAR S38 ROVER0 AL6
+       85: CARGAR S43 ROVER0 AL6
+       86: CARGAR S45 ROVER0 AL6
+       87: CARGAR S49 ROVER0 AL6
+       88: MOVER ROVER0 AL6 AL5
+       89: CARGAR S22 ROVER0 AL5
+       90: CARGAR S23 ROVER0 AL5
+       91: CARGAR S25 ROVER0 AL5
+       92: CARGAR S30 ROVER0 AL5
+       93: CARGAR S33 ROVER0 AL5
+       94: CARGAR S35 ROVER0 AL5
+       95: CARGAR S42 ROVER0 AL5
+       96: CARGAR S48 ROVER0 AL5
+       97: MOVER ROVER0 AL5 AS4
+       98: DESCARGAR S9 ROVER0 AS4
+       99: DESCARGAR S10 ROVER0 AS4
+      100: DESCARGAR S11 ROVER0 AS4
+      101: DESCARGAR S22 ROVER0 AS4
+      102: DESCARGAR S24 ROVER0 AS4
+      103: DESCARGAR S38 ROVER0 AS4
+      104: MOVER ROVER0 AS4 AS3
+      105: DESCARGAR S0 ROVER0 AS3
+      106: DESCARGAR S5 ROVER0 AS3
+      107: DESCARGAR S6 ROVER0 AS3
+      108: DESCARGAR S8 ROVER0 AS3
+      109: DESCARGAR S15 ROVER0 AS3
+      110: DESCARGAR S23 ROVER0 AS3
+      111: DESCARGAR S25 ROVER0 AS3
+      112: DESCARGAR S27 ROVER0 AS3
+      113: DESCARGAR S28 ROVER0 AS3
+      114: DESCARGAR S30 ROVER0 AS3
+      115: DESCARGAR S33 ROVER0 AS3
+      116: DESCARGAR S35 ROVER0 AS3
+      117: DESCARGAR S42 ROVER0 AS3
+      118: DESCARGAR S43 ROVER0 AS3
+      119: DESCARGAR S45 ROVER0 AS3
+      120: DESCARGAR S48 ROVER0 AS3
+      121: DESCARGAR S49 ROVER0 AS3
+      122: MOVER ROVER1 AS4 AS3
+      123: DESCARGAR P3 ROVER1 AS3
+      124: DESCARGAR P7 ROVER1 AS3
+      125: DESCARGAR P9 ROVER1 AS3
+      126: DESCARGAR P11 ROVER1 AS3
+      127: DESCARGAR P13 ROVER1 AS3
+      128: DESCARGAR P14 ROVER1 AS3
+      129: DESCARGAR P15 ROVER1 AS3
+      130: DESCARGAR P16 ROVER1 AS3
+      131: DESCARGAR P17 ROVER1 AS3
+      132: DESCARGAR P20 ROVER1 AS3
+      133: DESCARGAR P21 ROVER1 AS3
+      134: DESCARGAR P22 ROVER1 AS3
+      135: DESCARGAR P23 ROVER1 AS3
+      136: DESCARGAR P24 ROVER1 AS3
+      137: DESCARGAR P26 ROVER1 AS3
+      138: DESCARGAR P27 ROVER1 AS3
+      139: DESCARGAR P28 ROVER1 AS3
+      140: DESCARGAR P29 ROVER1 AS3
+      141: DESCARGAR P31 ROVER1 AS3
+      142: DESCARGAR P32 ROVER1 AS3
+      143: DESCARGAR P34 ROVER1 AS3
+      144: DESCARGAR P35 ROVER1 AS3
+      145: DESCARGAR P36 ROVER1 AS3
+      146: DESCARGAR P38 ROVER1 AS3
+      147: DESCARGAR P41 ROVER1 AS3
+      148: DESCARGAR P45 ROVER1 AS3
+      149: DESCARGAR P47 ROVER1 AS3
+      150: DESCARGAR P48 ROVER1 AS3
+      151: DESCARGAR P49 ROVER1 AS3
+      152: MOVER ROVER0 AS3 AS4
+      153: MOVER ROVER1 AS3 AL1
+      154: CARGAR S1 ROVER1 AL1
+      155: CARGAR S2 ROVER1 AL1
+      156: CARGAR S3 ROVER1 AL1
+      157: CARGAR S4 ROVER1 AL1
+      158: CARGAR S12 ROVER1 AL1
+      159: CARGAR S13 ROVER1 AL1
+      160: CARGAR S14 ROVER1 AL1
+      161: CARGAR S16 ROVER1 AL1
+      162: CARGAR S20 ROVER1 AL1
+      163: CARGAR S26 ROVER1 AL1
+      164: CARGAR S29 ROVER1 AL1
+      165: CARGAR S32 ROVER1 AL1
+      166: CARGAR S34 ROVER1 AL1
+      167: CARGAR S36 ROVER1 AL1
+      168: CARGAR S37 ROVER1 AL1
+      169: CARGAR S41 ROVER1 AL1
+      170: CARGAR S46 ROVER1 AL1
+      171: MOVER ROVER1 AL1 AS3
+      172: DESCARGAR S3 ROVER1 AS3
+      173: DESCARGAR S12 ROVER1 AS3
+      174: DESCARGAR S13 ROVER1 AS3
+      175: DESCARGAR S16 ROVER1 AS3
+      176: DESCARGAR S29 ROVER1 AS3
+      177: DESCARGAR S32 ROVER1 AS3
+      178: DESCARGAR S46 ROVER1 AS3
+      179: MOVER ROVER1 AS3 AS4
+      180: DESCARGAR S1 ROVER1 AS4
+      181: DESCARGAR S2 ROVER1 AS4
+      182: DESCARGAR S4 ROVER1 AS4
+      183: DESCARGAR S14 ROVER1 AS4
+      184: DESCARGAR S20 ROVER1 AS4
+      185: DESCARGAR S26 ROVER1 AS4
+      186: DESCARGAR S34 ROVER1 AS4
+      187: DESCARGAR S36 ROVER1 AS4
+      188: DESCARGAR S37 ROVER1 AS4
+      189: DESCARGAR S41 ROVER1 AS4
+      190: MOVER ROVER0 AS4 AS3
+      191: MOVER ROVER0 AS3 AL2
+      192: CARGAR S7 ROVER0 AL2
+      193: CARGAR S17 ROVER0 AL2
+      194: CARGAR S18 ROVER0 AL2
+      195: CARGAR S19 ROVER0 AL2
+      196: CARGAR S21 ROVER0 AL2
+      197: CARGAR S31 ROVER0 AL2
+      198: CARGAR S39 ROVER0 AL2
+      199: CARGAR S40 ROVER0 AL2
+      200: CARGAR S44 ROVER0 AL2
+      201: CARGAR S47 ROVER0 AL2
+      202: MOVER ROVER0 AL2 AS3
+      203: DESCARGAR S17 ROVER0 AS3
+      204: DESCARGAR S19 ROVER0 AS3
+      205: DESCARGAR S21 ROVER0 AS3
+      206: DESCARGAR S44 ROVER0 AS3
+      207: MOVER ROVER0 AS3 AS4
+      208: DESCARGAR S7 ROVER0 AS4
+      209: DESCARGAR S18 ROVER0 AS4
+      210: DESCARGAR S31 ROVER0 AS4
+      211: DESCARGAR S39 ROVER0 AS4
+      212: DESCARGAR S40 ROVER0 AS4
+      213: DESCARGAR S47 ROVER0 AS4
+     
+
+time spent:    0.00 seconds instantiating 1628 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 512 facts and 428 actions
+               0.00 seconds creating final representation with 512 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               2.50 seconds searching, evaluating 3822 states, to a max depth of 0
+               2.50 seconds total time
+
+"
