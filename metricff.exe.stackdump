@@ -1,13 +1,13 @@
-Exception: STATUS_ACCESS_VIOLATION at eip=0042EE76
-eax=000007A8 ebx=021DA008 ecx=00000000 edx=00000000 esi=60F8F408 edi=009EC880
-ebp=009E7A38 esp=009E79D0 program=C:\Users\Noel Nathan\Desktop\Universidad\3r Quadrimestre\ABIA\ABIA_PDDL_Project\metricff.exe, pid 21000, thread main
+Exception: STATUS_ACCESS_VIOLATION at eip=0042EF23
+eax=0000FE84 ebx=7A710008 ecx=000024D5 edx=00000000 esi=60DEF9B0 edi=00000000
+ebp=009E7A38 esp=009E79D0 program=C:\Users\Noel Nathan\Desktop\Universidad\3r Quadrimestre\ABIA\ABIA_PDDL_Project\metricff.exe, pid 28796, thread main
 cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
 Stack trace:
 Frame     Function  Args
-009E7A38  0042EE76  (009EC880, 00000876, 613C4EA0, 0192AD50)
+009E7A38  0042EF23  (009EC880, 00014F70, 7B0BEAB8, 0196BAD0)
 009EC8A8  0043031E  (009EC8F0, 00000001, 00000005, 00721D00)
-009ECB18  00401918  (00000006, 018E0200, 018E0090, 009ECB48)
+009ECB18  00401918  (00000006, 01920200, 01920090, 009ECB48)
 009ECD48  610060D8  (00000000, 009ECD80, 61005450, 009ECD80)
 61005450  61004416  (0000009C, A02404C7, E8611021, FFFFFF48)
-  44048 [main] metricff 21000 _cygtls::handle_exceptions: Exception: STATUS_ACCESS_VIOLATION
-  45198 [main] metricff 21000 _cygtls::handle_exceptions: Error while dumping state (probably corrupted stack)
+  41759 [main] metricff 28796 _cygtls::handle_exceptions: Exception: STATUS_ACCESS_VIOLATION
+  43145 [main] metricff 28796 _cygtls::handle_exceptions: Error while dumping state (probably corrupted stack)
