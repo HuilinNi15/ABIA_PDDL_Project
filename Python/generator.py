@@ -6,11 +6,14 @@ import shlex
 
 class Problem():
 
-    def __init__(self, level='Extension 1', domain='nivelbasico', problem='1') -> None:
+    def __init__(self, level='Extension 1', domain='nivelbasico', problem='1', decre_comb=0, val_comb=0, val_prio=0) -> None:
         self.level = level
         self.domain = domain
         self.problem = problem
         self.paths = self.__find_paths()
+        self.decre_comb = decre_comb
+        self.val_comb = val_comb
+        self.val_prio = val_prio
 
     def __find_paths(self) -> dict:
         project_path = str(pathlib.Path().resolve())
@@ -33,7 +36,7 @@ class Problem():
                 'read_output': read_output,
                 'write_problem': write_problem}
 
-    def generate_problem(self, n_rovers=1, suministros=4, personal=4, map=[(1, 2), (2, 3), (3, 4), (4, 1)], warehouses=[], settlements=[], r_map=0.5, seed=1234):
+    def generate_problem(self, n_rovers=1, suministros=4, personal=4, map=[(1, 2), (2, 3), (3, 4), (4, 1)], warehouses=[], settlements=[], r_map=0.5, comb_min_rovers=10000,  comb_max_rovers=10000, seed=1234):
         assert self.problem == "custom", "The Problem should be custom"
         assert len(map) >= 2, "Map too small"
         assert n_rovers > 0 and (
@@ -55,16 +58,14 @@ class Problem():
             for j in i:
                 if j not in bases:
                     bases[j] = ""
-
         if not warehouses and not settlements:
-            minimum = rand.choices(list(bases.keys()), k=3)
+            minimum = rand.sample(list(bases.keys()), k=3)
             bases[minimum[0]] = f"as{minimum[0]}"
             settlements.append(bases[minimum[0]])
             bases[minimum[1]] = f"as{minimum[1]}"
             settlements.append(bases[minimum[1]])
             bases[minimum[2]] = f"al{minimum[2]}"
             warehouses.append(bases[minimum[2]])
-
             for i in bases.keys():
                 if bases[i] == "":
                     base = rand.choices(['as', 'al'], weights=[
@@ -88,7 +89,6 @@ class Problem():
             init.append(f'conectado {bases[i[0]]} {bases[i[1]]}')
             init.append(f'conectado {bases[i[1]]} {bases[i[0]]}')
 
-        # Esto se podría eliminar???
         if len(warehouses) > 0:
             warehouses.append('almacen')
         if len(settlements) > 0:
@@ -104,9 +104,9 @@ class Problem():
                 init.append(f'= (PersonalCargado {rovers[i]}) 0')
                 init.append(f'= (SuministroCargado {rovers[i]}) 0')
                 if self.level != 'Extension 1':  # -------------------------- EXTENSIONES 2, 3
-                    init.append(f'= (CombustibleRestante {rovers[i]}) 10000')
+                    init.append(
+                        f'= (CombustibleRestante {rovers[i]}) {rand.randint(comb_min_rovers, comb_max_rovers)}')
         rovers.append('rover')
-
         # ------------------------------ TRANSPORTABLES ------------------------------
         people = []
         for i in range(personal):
@@ -170,7 +170,7 @@ class Problem():
             init_lines += '        (= (p) 2)\n        (= (s) 1)\n'
             if self.level != 'Extension 1':
                 init_lines += '        (= (CombustibleTotal) 0)\n'
-                init_lines += '        (= (DecrecimientoCombusitible) 0)\n'
+                init_lines += f'        (= (DecrecimientoCombusitible) {self.decre_comb})\n'
         for j in init:
             init_lines.append(f'        ({j})\n')
 
@@ -185,7 +185,8 @@ class Problem():
             lines + ['    (:metric minimize (CombustibleTotal))\n']
 
         elif self.level == 'Extension 3':
-            lines += ['    (:metric maximize (AcumPrioridad))\n']
+            lines += [
+                f'    (:metric minimize(+ (* {self.val_prio} (AcumPrioridad)) (* {self.val_comb} (- (CombustibleTotal)))))\n']
         lines += ['\n',
                   ')\n']
 

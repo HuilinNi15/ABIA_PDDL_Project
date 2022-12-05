@@ -12,15 +12,17 @@ personal = 10
 optim = True
 
 mars_map = [(1, 2), (2, 3), (3, 4)]
-warehouses = [2]
-settlements = [1, 3, 4]
+warehouses = [1, 3]
+settlements = [4, 2]
 r_map = 0.5
 
-seeds = [rand.randint(1, 1000000000) for _ in range(10)]
+seeds = [1]
 
 n = len(seeds)
 results = []
 for seed in seeds:
+    warehouses = []
+    settlements = []
     objects, init = problem.generate_problem(
         n_rovers, suministros, personal, mars_map, warehouses, settlements, r_map, seed)
 
