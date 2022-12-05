@@ -1,4 +1,4 @@
-(define (domain BasesMarte_extension2_1)
+(define (domain BasesMarte_extension2)
 
     (:requirements :adl :typing :fluents)
 

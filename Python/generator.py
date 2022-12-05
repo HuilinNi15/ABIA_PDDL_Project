@@ -171,6 +171,8 @@ class Problem():
             if self.level != 'Extension 1':
                 init_lines += '        (= (CombustibleTotal) 0)\n'
                 init_lines += f'        (= (DecrecimientoCombusitible) {self.decre_comb})\n'
+                if self.level != 'Extension 2':
+                    init_lines += f'        (= (AcumPrioridad) 0)'
         for j in init:
             init_lines.append(f'        ({j})\n')
 
@@ -186,7 +188,7 @@ class Problem():
 
         elif self.level == 'Extension 3':
             lines += [
-                f'    (:metric minimize(+ (* {self.val_prio} (AcumPrioridad)) (* {self.val_comb} (- (CombustibleTotal)))))\n']
+                f'    (:metric minimize(CombustibleTotal))\n']
         lines += ['\n',
                   ')\n']
 

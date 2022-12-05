@@ -1,5 +1,5 @@
 (define (problem RoversSuministrosPersonal)
-    (:domain BasesMarte_extension2_1)
+    (:domain BasesMarte_extension2)
 
     (:objects
         as1 as2 - asentamiento
