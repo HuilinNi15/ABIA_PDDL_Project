@@ -37,7 +37,7 @@ class Problem():
                 'read_output': read_output,
                 'write_problem': write_problem}
 
-    def generate_problem(self, n_rovers=1, suministros=4, personal=4, map=[(1, 2), (2, 3), (3, 4), (4, 1)], warehouses=[], settlements=[], r_map=0.5, comb_min_rovers=10000,  comb_max_rovers=10000, seed=1234):
+    def generate_problem(self, n_rovers=1, suministros=4, personal=4, map=[(1, 2), (2, 3), (3, 4), (4, 1)], warehouses=[], settlements=[], r_map=0.5, comb_min_rovers=10000,  comb_max_rovers=10000, pedidos_adicionales=0, seed=1234):
         assert self.problem == "custom", "The Problem should be custom"
         assert len(map) >= 2, "Map too small"
         assert n_rovers > 0 and (
@@ -49,7 +49,7 @@ class Problem():
         bases = {}
         priorities = []
         if self.level == 'Extension 3':  # -------------------------- EXTENSION 3
-            for i in range(suministros + personal):
+            for i in range(suministros + personal + pedidos_adicionales):
                 priorities.append(f'id{i}')
                 priority = rand.randint(1, 3)
                 self.dict_prio[f'ID{i}'] = priority
@@ -137,6 +137,17 @@ class Problem():
                 init.append(f'pedido {supplies[i]} {base_pedido}')
         supplies.append('suministro')
 
+        if pedidos_adicionales:
+            transportables = people[:-1] + supplies[:-1]
+            bases = warehouses[:-1] + settlements[:-1]
+            for i in range(suministros + personal, suministros + personal + pedidos_adicionales):
+                transportable = random.choice(transportables)
+                base_pedido = random.choice(bases)
+                if self.level == 'Extension 3':  # -------------------------- EXTENSION 3
+                    init.append(f'pedido {transportable} {base_pedido} id{i}')
+                else:
+                    init.append(f'pedido {transportable} {base_pedido}')
+
         if self.level == 'Extension 3':  # -------------------------- EXTENSION 3
             return [rovers, people, supplies, warehouses, settlements, priorities], init
         else:
@@ -210,7 +221,7 @@ class Problem():
         with open(self.paths["output"], 'w') as f:
             f.writelines(str(output))
 
-    def read_output(self, combustible, prioridad):
+    def read_output(self, combustible=False, prioridad=False):
         with open(self.paths['read_output']) as f:
             lines = f.readlines()
 

@@ -16,7 +16,7 @@
         (= (PersonalCargado Curiosity) 0)
         (= (SuministroCargado Curiosity) 0)
         (= (CombustibleRestante Curiosity) 10)
-        (=(DecresimientoCombusitible) 0)
+        (= (DecrecimientoCombusitible) 0)
 
         (= (CombustibleTotal) 0)
 
