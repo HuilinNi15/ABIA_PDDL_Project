@@ -37,7 +37,9 @@
             (decrease
                 (CombustibleRestante ?r)
                 (DecrecimientoCombusitible))
-            (increase (CombustibleTotal) 1)
+            (increase
+                (CombustibleTotal)
+                (DecrecimientoCombusitible))
         )
     )
 
