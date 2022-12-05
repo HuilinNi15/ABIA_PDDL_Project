@@ -18,7 +18,7 @@
         (= (CombustibleRestante Curiosity) 10)
         (= (DecrecimientoCombusitible) 0)
 
-        (= (CombustibleTotal) 0)
+        (= (CombustibleTotalUtilizado) 0)
 
         (aparcado Curiosity al1)
 
@@ -46,6 +46,6 @@
             (suministrado ?t))
     )
     (:metric minimize
-        (CombustibleTotal)
+        (CombustibleTotalUtilizado)
     )
 )

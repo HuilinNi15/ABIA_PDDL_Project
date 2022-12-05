@@ -11,7 +11,7 @@
     (:init
         (= (p) 2)
         (= (s) 1)
-        (= (CombustibleTotal) 0)
+        (= (CombustibleTotalUtilizado) 0)
         (= (DecrecimientoCombusitible) 0)
         (conectado al1 al2)
         (conectado al2 al1)
