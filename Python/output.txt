@@ -7,14 +7,213 @@ problem 'ROVERSSUMINISTROSPERSONAL' defined
  ... done.
 
 
-metric established (normalized to minimize): ((1.00*[RF7](COMBUSTIBLETOTAL)) - () + 0.00)
+warning: change on metric in wrong direction. metric replaced with plan length.
 
 checking for cyclic := effects --- OK.
 
 ff: search configuration is  best-first on 1*g(s) + 5*h(s) where
-    metric is ((1.00*[RF7](COMBUSTIBLETOTAL)) - () + 0.00)
+    metric is  plan length
 
-advancing to distance:    6
+advancing to distance:  205
+                        204
+                        203
+                        202
+                        201
+                        200
+                        199
+                        198
+                        197
+                        196
+                        195
+                        194
+                        193
+                        192
+                        191
+                        190
+                        189
+                        188
+                        187
+                        186
+                        185
+                        184
+                        183
+                        182
+                        181
+                        180
+                        179
+                        178
+                        177
+                        176
+                        175
+                        174
+                        173
+                        172
+                        171
+                        170
+                        169
+                        168
+                        167
+                        166
+                        165
+                        164
+                        163
+                        162
+                        161
+                        160
+                        159
+                        158
+                        157
+                        156
+                        155
+                        154
+                        153
+                        152
+                        151
+                        150
+                        149
+                        148
+                        147
+                        146
+                        145
+                        144
+                        143
+                        142
+                        141
+                        140
+                        139
+                        138
+                        137
+                        136
+                        135
+                        134
+                        133
+                        132
+                        131
+                        130
+                        129
+                        128
+                        127
+                        126
+                        125
+                        124
+                        123
+                        122
+                        121
+                        120
+                        119
+                        118
+                        117
+                        116
+                        115
+                        114
+                        113
+                        112
+                        111
+                        110
+                        109
+                        108
+                        107
+                        106
+                        105
+                        104
+                        103
+                        102
+                        101
+                        100
+                         99
+                         98
+                         97
+                         96
+                         95
+                         94
+                         93
+                         92
+                         91
+                         90
+                         89
+                         88
+                         87
+                         86
+                         85
+                         84
+                         83
+                         82
+                         81
+                         80
+                         79
+                         78
+                         77
+                         76
+                         75
+                         74
+                         73
+                         72
+                         71
+                         70
+                         69
+                         68
+                         67
+                         66
+                         65
+                         64
+                         63
+                         62
+                         61
+                         60
+                         59
+                         58
+                         57
+                         56
+                         55
+                         54
+                         53
+                         52
+                         51
+                         50
+                         49
+                         48
+                         47
+                         46
+                         45
+                         44
+                         43
+                         42
+                         41
+                         40
+                         39
+                         38
+                         37
+                         36
+                         35
+                         34
+                         33
+                         32
+                         31
+                         30
+                         29
+                         28
+                         27
+                         26
+                         25
+                         24
+                         23
+                         22
+                         21
+                         20
+                         19
+                         18
+                         17
+                         16
+                         15
+                         14
+                         13
+                         12
+                         11
+                         10
+                          9
+                          8
+                          7
+                          6
                           5
                           4
                           3
@@ -24,21 +223,406 @@ advancing to distance:    6
 
 ff: found legal plan as follows
 
-step    0: CARGAR_SUMINISTRO S0 ROVER1 AL1
-        1: MOVER ROVER1 AL1 AS3
-        2: DESCARGAR_SUMINISTRO S0 ROVER1 AS3 ID1
-        3: MOVER ROVER1 AS3 AS4
-        4: CARGAR_PERSONAL P0 ROVER1 AS4
-        5: MOVER ROVER1 AS4 AS3
-        6: DESCARGAR_PERSONAL P0 ROVER1 AS3 ID0
+step    0: CARGAR_SUMINISTRO S4 ROVER0 AL6
+        1: CARGAR_SUMINISTRO S42 ROVER1 AL6
+        2: MOVER ROVER0 AL6 AS4
+        3: MOVER ROVER1 AL6 AS4
+        4: DESCARGAR_SUMINISTRO S42 ROVER1 AS4 ID92
+        5: DESCARGAR_SUMINISTRO S4 ROVER0 AS4 ID54
+        6: CARGAR_PERSONAL P1 ROVER0 AS4
+        7: CARGAR_PERSONAL P2 ROVER0 AS4
+        8: CARGAR_PERSONAL P6 ROVER1 AS4
+        9: CARGAR_PERSONAL P7 ROVER1 AS4
+       10: MOVER ROVER1 AS4 AL5
+       11: MOVER ROVER0 AS4 AS3
+       12: DESCARGAR_PERSONAL P1 ROVER0 AS3 ID1
+       13: CARGAR_PERSONAL P3 ROVER0 AS3
+       14: DESCARGAR_PERSONAL P2 ROVER0 AS3 ID2
+       15: CARGAR_PERSONAL P49 ROVER0 AS3
+       16: MOVER ROVER0 AS3 AS4
+       17: MOVER ROVER1 AL5 AS4
+       18: DESCARGAR_PERSONAL P3 ROVER0 AS4 ID3
+       19: CARGAR_PERSONAL P9 ROVER0 AS4
+       20: DESCARGAR_PERSONAL P49 ROVER0 AS4 ID49
+       21: CARGAR_PERSONAL P16 ROVER0 AS4
+       22: MOVER ROVER1 AS4 AL5
+       23: MOVER ROVER0 AS4 AS3
+       24: DESCARGAR_PERSONAL P9 ROVER0 AS3 ID9
+       25: CARGAR_PERSONAL P19 ROVER0 AS3
+       26: DESCARGAR_PERSONAL P16 ROVER0 AS3 ID16
+       27: CARGAR_PERSONAL P46 ROVER0 AS3
+       28: MOVER ROVER0 AS3 AS4
+       29: MOVER ROVER1 AL5 AS4
+       30: DESCARGAR_PERSONAL P19 ROVER0 AS4 ID19
+       31: CARGAR_PERSONAL P17 ROVER0 AS4
+       32: DESCARGAR_PERSONAL P46 ROVER0 AS4 ID46
+       33: CARGAR_PERSONAL P18 ROVER0 AS4
+       34: MOVER ROVER1 AS4 AL5
+       35: MOVER ROVER0 AS4 AS3
+       36: DESCARGAR_PERSONAL P17 ROVER0 AS3 ID17
+       37: CARGAR_PERSONAL P20 ROVER0 AS3
+       38: DESCARGAR_PERSONAL P18 ROVER0 AS3 ID18
+       39: CARGAR_PERSONAL P45 ROVER0 AS3
+       40: MOVER ROVER0 AS3 AS4
+       41: MOVER ROVER1 AL5 AS4
+       42: DESCARGAR_PERSONAL P20 ROVER0 AS4 ID20
+       43: CARGAR_PERSONAL P22 ROVER0 AS4
+       44: DESCARGAR_PERSONAL P45 ROVER0 AS4 ID45
+       45: CARGAR_PERSONAL P24 ROVER0 AS4
+       46: MOVER ROVER1 AS4 AL5
+       47: MOVER ROVER0 AS4 AS3
+       48: DESCARGAR_PERSONAL P22 ROVER0 AS3 ID22
+       49: CARGAR_PERSONAL P25 ROVER0 AS3
+       50: DESCARGAR_PERSONAL P24 ROVER0 AS3 ID24
+       51: CARGAR_PERSONAL P44 ROVER0 AS3
+       52: MOVER ROVER0 AS3 AS4
+       53: MOVER ROVER1 AL5 AS4
+       54: DESCARGAR_PERSONAL P25 ROVER0 AS4 ID25
+       55: CARGAR_PERSONAL P26 ROVER0 AS4
+       56: DESCARGAR_PERSONAL P44 ROVER0 AS4 ID44
+       57: CARGAR_PERSONAL P28 ROVER0 AS4
+       58: MOVER ROVER1 AS4 AL5
+       59: MOVER ROVER0 AS4 AS3
+       60: DESCARGAR_PERSONAL P26 ROVER0 AS3 ID26
+       61: CARGAR_PERSONAL P29 ROVER0 AS3
+       62: DESCARGAR_PERSONAL P28 ROVER0 AS3 ID28
+       63: CARGAR_PERSONAL P43 ROVER0 AS3
+       64: MOVER ROVER0 AS3 AS4
+       65: MOVER ROVER1 AL5 AS4
+       66: DESCARGAR_PERSONAL P29 ROVER0 AS4 ID29
+       67: CARGAR_PERSONAL P30 ROVER0 AS4
+       68: DESCARGAR_PERSONAL P43 ROVER0 AS4 ID43
+       69: CARGAR_PERSONAL P31 ROVER0 AS4
+       70: MOVER ROVER1 AS4 AL5
+       71: MOVER ROVER0 AS4 AS3
+       72: DESCARGAR_PERSONAL P30 ROVER0 AS3 ID30
+       73: CARGAR_PERSONAL P33 ROVER0 AS3
+       74: DESCARGAR_PERSONAL P31 ROVER0 AS3 ID31
+       75: CARGAR_PERSONAL P41 ROVER0 AS3
+       76: MOVER ROVER0 AS3 AS4
+       77: MOVER ROVER1 AL5 AS4
+       78: DESCARGAR_PERSONAL P33 ROVER0 AS4 ID33
+       79: CARGAR_PERSONAL P32 ROVER0 AS4
+       80: DESCARGAR_PERSONAL P41 ROVER0 AS4 ID41
+       81: CARGAR_PERSONAL P35 ROVER0 AS4
+       82: MOVER ROVER1 AS4 AL5
+       83: MOVER ROVER0 AS4 AS3
+       84: DESCARGAR_PERSONAL P32 ROVER0 AS3 ID32
+       85: CARGAR_PERSONAL P36 ROVER0 AS3
+       86: DESCARGAR_PERSONAL P35 ROVER0 AS3 ID35
+       87: CARGAR_PERSONAL P40 ROVER0 AS3
+       88: MOVER ROVER0 AS3 AS4
+       89: MOVER ROVER1 AL5 AS4
+       90: DESCARGAR_PERSONAL P36 ROVER0 AS4 ID36
+       91: CARGAR_PERSONAL P38 ROVER0 AS4
+       92: DESCARGAR_PERSONAL P40 ROVER0 AS4 ID40
+       93: CARGAR_PERSONAL P42 ROVER0 AS4
+       94: MOVER ROVER1 AS4 AL5
+       95: MOVER ROVER0 AS4 AS3
+       96: DESCARGAR_PERSONAL P38 ROVER0 AS3 ID38
+       97: DESCARGAR_PERSONAL P42 ROVER0 AS3 ID42
+       98: CARGAR_PERSONAL P0 ROVER0 AS3
+       99: CARGAR_PERSONAL P39 ROVER0 AS3
+      100: MOVER ROVER0 AS3 AS4
+      101: MOVER ROVER1 AL5 AS4
+      102: DESCARGAR_PERSONAL P0 ROVER0 AS4 ID0
+      103: CARGAR_PERSONAL P47 ROVER0 AS4
+      104: DESCARGAR_PERSONAL P39 ROVER0 AS4 ID39
+      105: CARGAR_PERSONAL P48 ROVER0 AS4
+      106: MOVER ROVER1 AS4 AL5
+      107: MOVER ROVER0 AS4 AS3
+      108: DESCARGAR_PERSONAL P47 ROVER0 AS3 ID47
+      109: DESCARGAR_PERSONAL P48 ROVER0 AS3 ID48
+      110: CARGAR_PERSONAL P4 ROVER0 AS3
+      111: CARGAR_PERSONAL P37 ROVER0 AS3
+      112: MOVER ROVER0 AS3 AS4
+      113: MOVER ROVER1 AL5 AS4
+      114: DESCARGAR_PERSONAL P4 ROVER0 AS4 ID4
+      115: DESCARGAR_PERSONAL P37 ROVER0 AS4 ID37
+      116: MOVER ROVER0 AS4 AL6
+      117: CARGAR_SUMINISTRO S39 ROVER0 AL6
+      118: MOVER ROVER0 AL6 AS4
+      119: DESCARGAR_SUMINISTRO S39 ROVER0 AS4 ID89
+      120: MOVER ROVER0 AS4 AL6
+      121: CARGAR_SUMINISTRO S36 ROVER0 AL6
+      122: MOVER ROVER0 AL6 AS4
+      123: DESCARGAR_SUMINISTRO S36 ROVER0 AS4 ID86
+      124: MOVER ROVER0 AS4 AL6
+      125: CARGAR_SUMINISTRO S30 ROVER0 AL6
+      126: MOVER ROVER0 AL6 AS4
+      127: DESCARGAR_SUMINISTRO S30 ROVER0 AS4 ID80
+      128: MOVER ROVER0 AS4 AL6
+      129: CARGAR_SUMINISTRO S19 ROVER0 AL6
+      130: MOVER ROVER0 AL6 AS4
+      131: DESCARGAR_SUMINISTRO S19 ROVER0 AS4 ID69
+      132: MOVER ROVER0 AS4 AL6
+      133: CARGAR_SUMINISTRO S13 ROVER0 AL6
+      134: MOVER ROVER0 AL6 AS4
+      135: DESCARGAR_SUMINISTRO S13 ROVER0 AS4 ID63
+      136: MOVER ROVER0 AS4 AL6
+      137: CARGAR_SUMINISTRO S10 ROVER0 AL6
+      138: MOVER ROVER0 AL6 AS4
+      139: DESCARGAR_SUMINISTRO S10 ROVER0 AS4 ID60
+      140: MOVER ROVER0 AS4 AL6
+      141: CARGAR_SUMINISTRO S7 ROVER0 AL6
+      142: MOVER ROVER0 AL6 AS4
+      143: DESCARGAR_SUMINISTRO S7 ROVER0 AS4 ID57
+      144: MOVER ROVER0 AS4 AL5
+      145: CARGAR_SUMINISTRO S47 ROVER0 AL5
+      146: MOVER ROVER0 AL5 AS4
+      147: DESCARGAR_SUMINISTRO S47 ROVER0 AS4 ID97
+      148: MOVER ROVER0 AS4 AL5
+      149: CARGAR_SUMINISTRO S45 ROVER0 AL5
+      150: MOVER ROVER0 AL5 AS4
+      151: DESCARGAR_SUMINISTRO S45 ROVER0 AS4 ID95
+      152: MOVER ROVER0 AS4 AL5
+      153: CARGAR_SUMINISTRO S44 ROVER0 AL5
+      154: MOVER ROVER0 AL5 AS4
+      155: DESCARGAR_SUMINISTRO S44 ROVER0 AS4 ID94
+      156: MOVER ROVER0 AS4 AL5
+      157: CARGAR_SUMINISTRO S21 ROVER0 AL5
+      158: MOVER ROVER0 AL5 AS4
+      159: DESCARGAR_SUMINISTRO S21 ROVER0 AS4 ID71
+      160: MOVER ROVER0 AS4 AL5
+      161: CARGAR_SUMINISTRO S20 ROVER0 AL5
+      162: MOVER ROVER0 AL5 AS4
+      163: DESCARGAR_SUMINISTRO S20 ROVER0 AS4 ID70
+      164: MOVER ROVER0 AS4 AL5
+      165: CARGAR_SUMINISTRO S15 ROVER0 AL5
+      166: MOVER ROVER0 AL5 AS4
+      167: DESCARGAR_SUMINISTRO S15 ROVER0 AS4 ID65
+      168: MOVER ROVER0 AS4 AL5
+      169: CARGAR_SUMINISTRO S11 ROVER0 AL5
+      170: MOVER ROVER0 AL5 AS4
+      171: DESCARGAR_SUMINISTRO S11 ROVER0 AS4 ID61
+      172: MOVER ROVER0 AS4 AL5
+      173: CARGAR_SUMINISTRO S0 ROVER0 AL5
+      174: MOVER ROVER0 AL5 AS4
+      175: DESCARGAR_SUMINISTRO S0 ROVER0 AS4 ID50
+      176: MOVER ROVER1 AS4 AS3
+      177: DESCARGAR_PERSONAL P6 ROVER1 AS3 ID6
+      178: MOVER ROVER0 AS4 AS3
+      179: DESCARGAR_PERSONAL P7 ROVER1 AS3 ID7
+      180: CARGAR_PERSONAL P5 ROVER0 AS3
+      181: CARGAR_PERSONAL P8 ROVER0 AS3
+      182: CARGAR_PERSONAL P10 ROVER1 AS3
+      183: CARGAR_PERSONAL P11 ROVER1 AS3
+      184: MOVER ROVER1 AS3 AL2
+      185: MOVER ROVER0 AS3 AS4
+      186: DESCARGAR_PERSONAL P5 ROVER0 AS4 ID5
+      187: DESCARGAR_PERSONAL P8 ROVER0 AS4 ID8
+      188: MOVER ROVER0 AS4 AS3
+      189: CARGAR_PERSONAL P12 ROVER0 AS3
+      190: CARGAR_PERSONAL P34 ROVER0 AS3
+      191: MOVER ROVER0 AS3 AS4
+      192: DESCARGAR_PERSONAL P12 ROVER0 AS4 ID12
+      193: DESCARGAR_PERSONAL P34 ROVER0 AS4 ID34
+      194: MOVER ROVER0 AS4 AS3
+      195: CARGAR_PERSONAL P13 ROVER0 AS3
+      196: CARGAR_PERSONAL P27 ROVER0 AS3
+      197: MOVER ROVER0 AS3 AS4
+      198: DESCARGAR_PERSONAL P13 ROVER0 AS4 ID13
+      199: DESCARGAR_PERSONAL P27 ROVER0 AS4 ID27
+      200: MOVER ROVER0 AS4 AS3
+      201: CARGAR_PERSONAL P14 ROVER0 AS3
+      202: CARGAR_PERSONAL P23 ROVER0 AS3
+      203: MOVER ROVER0 AS3 AS4
+      204: DESCARGAR_PERSONAL P14 ROVER0 AS4 ID14
+      205: DESCARGAR_PERSONAL P23 ROVER0 AS4 ID23
+      206: MOVER ROVER0 AS4 AS3
+      207: CARGAR_PERSONAL P15 ROVER0 AS3
+      208: CARGAR_PERSONAL P21 ROVER0 AS3
+      209: MOVER ROVER0 AS3 AS4
+      210: DESCARGAR_PERSONAL P15 ROVER0 AS4 ID15
+      211: DESCARGAR_PERSONAL P21 ROVER0 AS4 ID21
+      212: MOVER ROVER0 AS4 AS3
+      213: MOVER ROVER1 AL2 AS3
+      214: MOVER ROVER0 AS3 AL1
+      215: CARGAR_SUMINISTRO S41 ROVER0 AL1
+      216: MOVER ROVER0 AL1 AS3
+      217: DESCARGAR_SUMINISTRO S41 ROVER0 AS3 ID91
+      218: MOVER ROVER0 AS3 AL1
+      219: CARGAR_SUMINISTRO S40 ROVER0 AL1
+      220: MOVER ROVER0 AL1 AS3
+      221: DESCARGAR_SUMINISTRO S40 ROVER0 AS3 ID90
+      222: MOVER ROVER0 AS3 AL1
+      223: CARGAR_SUMINISTRO S38 ROVER0 AL1
+      224: MOVER ROVER0 AL1 AS3
+      225: DESCARGAR_SUMINISTRO S38 ROVER0 AS3 ID88
+      226: MOVER ROVER0 AS3 AL1
+      227: CARGAR_SUMINISTRO S29 ROVER0 AL1
+      228: MOVER ROVER0 AL1 AS3
+      229: DESCARGAR_SUMINISTRO S29 ROVER0 AS3 ID79
+      230: MOVER ROVER0 AS3 AL1
+      231: CARGAR_SUMINISTRO S28 ROVER0 AL1
+      232: MOVER ROVER0 AL1 AS3
+      233: DESCARGAR_SUMINISTRO S28 ROVER0 AS3 ID78
+      234: MOVER ROVER0 AS3 AL1
+      235: CARGAR_SUMINISTRO S17 ROVER0 AL1
+      236: MOVER ROVER0 AL1 AS3
+      237: DESCARGAR_SUMINISTRO S17 ROVER0 AS3 ID67
+      238: MOVER ROVER0 AS3 AL1
+      239: CARGAR_SUMINISTRO S8 ROVER0 AL1
+      240: MOVER ROVER0 AL1 AS3
+      241: DESCARGAR_SUMINISTRO S8 ROVER0 AS3 ID58
+      242: MOVER ROVER0 AS3 AL1
+      243: CARGAR_SUMINISTRO S5 ROVER0 AL1
+      244: MOVER ROVER0 AL1 AS3
+      245: DESCARGAR_SUMINISTRO S5 ROVER0 AS3 ID55
+      246: MOVER ROVER0 AS3 AL2
+      247: CARGAR_SUMINISTRO S49 ROVER0 AL2
+      248: MOVER ROVER0 AL2 AS3
+      249: DESCARGAR_SUMINISTRO S49 ROVER0 AS3 ID99
+      250: MOVER ROVER0 AS3 AL2
+      251: CARGAR_SUMINISTRO S33 ROVER0 AL2
+      252: MOVER ROVER0 AL2 AS3
+      253: DESCARGAR_SUMINISTRO S33 ROVER0 AS3 ID83
+      254: MOVER ROVER0 AS3 AL2
+      255: CARGAR_SUMINISTRO S2 ROVER0 AL2
+      256: MOVER ROVER0 AL2 AS3
+      257: DESCARGAR_SUMINISTRO S2 ROVER0 AS3 ID52
+      258: MOVER ROVER0 AS3 AL2
+      259: CARGAR_SUMINISTRO S1 ROVER0 AL2
+      260: MOVER ROVER0 AL2 AS3
+      261: DESCARGAR_SUMINISTRO S1 ROVER0 AS3 ID51
+      262: MOVER ROVER0 AS3 AS4
+      263: MOVER ROVER1 AS3 AS4
+      264: DESCARGAR_PERSONAL P10 ROVER1 AS4 ID10
+      265: DESCARGAR_PERSONAL P11 ROVER1 AS4 ID11
+      266: MOVER ROVER1 AS4 AL5
+      267: CARGAR_SUMINISTRO S12 ROVER1 AL5
+      268: MOVER ROVER1 AL5 AS4
+      269: MOVER ROVER0 AS4 AS3
+      270: MOVER ROVER1 AS4 AS3
+      271: DESCARGAR_SUMINISTRO S12 ROVER1 AS3 ID62
+      272: MOVER ROVER1 AS3 AL2
+      273: CARGAR_SUMINISTRO S3 ROVER1 AL2
+      274: MOVER ROVER1 AL2 AS3
+      275: MOVER ROVER0 AS3 AS4
+      276: MOVER ROVER1 AS3 AS4
+      277: DESCARGAR_SUMINISTRO S3 ROVER1 AS4 ID53
+      278: MOVER ROVER1 AS4 AL5
+      279: CARGAR_SUMINISTRO S22 ROVER1 AL5
+      280: MOVER ROVER1 AL5 AS4
+      281: MOVER ROVER0 AS4 AS3
+      282: MOVER ROVER1 AS4 AS3
+      283: DESCARGAR_SUMINISTRO S22 ROVER1 AS3 ID72
+      284: MOVER ROVER1 AS3 AL2
+      285: CARGAR_SUMINISTRO S18 ROVER1 AL2
+      286: MOVER ROVER1 AL2 AS3
+      287: MOVER ROVER0 AS3 AS4
+      288: MOVER ROVER1 AS3 AS4
+      289: DESCARGAR_SUMINISTRO S18 ROVER1 AS4 ID68
+      290: MOVER ROVER1 AS4 AL5
+      291: CARGAR_SUMINISTRO S24 ROVER1 AL5
+      292: MOVER ROVER1 AL5 AS4
+      293: MOVER ROVER0 AS4 AS3
+      294: MOVER ROVER1 AS4 AS3
+      295: DESCARGAR_SUMINISTRO S24 ROVER1 AS3 ID74
+      296: MOVER ROVER1 AS3 AL2
+      297: CARGAR_SUMINISTRO S27 ROVER1 AL2
+      298: MOVER ROVER1 AL2 AS3
+      299: MOVER ROVER0 AS3 AS4
+      300: MOVER ROVER1 AS3 AS4
+      301: DESCARGAR_SUMINISTRO S27 ROVER1 AS4 ID77
+      302: MOVER ROVER1 AS4 AL5
+      303: CARGAR_SUMINISTRO S32 ROVER1 AL5
+      304: MOVER ROVER1 AL5 AS4
+      305: MOVER ROVER0 AS4 AL5
+      306: CARGAR_SUMINISTRO S37 ROVER0 AL5
+      307: MOVER ROVER0 AL5 AS4
+      308: MOVER ROVER0 AS4 AS3
+      309: MOVER ROVER1 AS4 AS3
+      310: DESCARGAR_SUMINISTRO S32 ROVER1 AS3 ID82
+      311: DESCARGAR_SUMINISTRO S37 ROVER0 AS3 ID87
+      312: MOVER ROVER1 AS3 AL2
+      313: CARGAR_SUMINISTRO S34 ROVER1 AL2
+      314: MOVER ROVER1 AL2 AS3
+      315: MOVER ROVER0 AS3 AS4
+      316: MOVER ROVER1 AS3 AS4
+      317: DESCARGAR_SUMINISTRO S34 ROVER1 AS4 ID84
+      318: MOVER ROVER1 AS4 AL6
+      319: CARGAR_SUMINISTRO S9 ROVER1 AL6
+      320: MOVER ROVER1 AL6 AS4
+      321: MOVER ROVER0 AS4 AS3
+      322: MOVER ROVER1 AS4 AS3
+      323: DESCARGAR_SUMINISTRO S9 ROVER1 AS3 ID59
+      324: MOVER ROVER1 AS3 AL2
+      325: CARGAR_SUMINISTRO S46 ROVER1 AL2
+      326: MOVER ROVER1 AL2 AS3
+      327: MOVER ROVER0 AS3 AS4
+      328: MOVER ROVER1 AS3 AS4
+      329: DESCARGAR_SUMINISTRO S46 ROVER1 AS4 ID96
+      330: MOVER ROVER0 AS4 AS3
+      331: MOVER ROVER1 AS4 AS3
+      332: MOVER ROVER0 AS3 AL2
+      333: CARGAR_SUMINISTRO S48 ROVER0 AL2
+      334: MOVER ROVER0 AL2 AS3
+      335: MOVER ROVER0 AS3 AS4
+      336: DESCARGAR_SUMINISTRO S48 ROVER0 AS4 ID98
+      337: MOVER ROVER1 AS3 AL1
+      338: CARGAR_SUMINISTRO S6 ROVER1 AL1
+      339: MOVER ROVER1 AL1 AS3
+      340: MOVER ROVER1 AS3 AS4
+      341: DESCARGAR_SUMINISTRO S6 ROVER1 AS4 ID56
+      342: MOVER ROVER1 AS4 AL6
+      343: CARGAR_SUMINISTRO S14 ROVER1 AL6
+      344: MOVER ROVER1 AL6 AS4
+      345: MOVER ROVER0 AS4 AS3
+      346: MOVER ROVER1 AS4 AS3
+      347: DESCARGAR_SUMINISTRO S14 ROVER1 AS3 ID64
+      348: MOVER ROVER1 AS3 AL1
+      349: CARGAR_SUMINISTRO S16 ROVER1 AL1
+      350: MOVER ROVER1 AL1 AS3
+      351: MOVER ROVER0 AS3 AS4
+      352: MOVER ROVER1 AS3 AS4
+      353: DESCARGAR_SUMINISTRO S16 ROVER1 AS4 ID66
+      354: MOVER ROVER1 AS4 AL6
+      355: CARGAR_SUMINISTRO S23 ROVER1 AL6
+      356: MOVER ROVER1 AL6 AS4
+      357: MOVER ROVER0 AS4 AS3
+      358: MOVER ROVER1 AS4 AS3
+      359: DESCARGAR_SUMINISTRO S23 ROVER1 AS3 ID73
+      360: MOVER ROVER1 AS3 AL1
+      361: CARGAR_SUMINISTRO S25 ROVER1 AL1
+      362: MOVER ROVER1 AL1 AS3
+      363: MOVER ROVER0 AS3 AS4
+      364: MOVER ROVER1 AS3 AS4
+      365: DESCARGAR_SUMINISTRO S25 ROVER1 AS4 ID75
+      366: MOVER ROVER0 AS4 AS3
+      367: MOVER ROVER1 AS4 AS3
+      368: MOVER ROVER0 AS3 AL2
+      369: MOVER ROVER1 AS3 AL1
+      370: CARGAR_SUMINISTRO S43 ROVER1 AL1
+      371: MOVER ROVER1 AL1 AS3
+      372: MOVER ROVER1 AS3 AS4
+      373: DESCARGAR_SUMINISTRO S43 ROVER1 AS4 ID93
+      374: MOVER ROVER0 AL2 AS3
+      375: MOVER ROVER1 AS4 AL6
+      376: CARGAR_SUMINISTRO S26 ROVER1 AL6
+      377: MOVER ROVER1 AL6 AS4
+      378: MOVER ROVER1 AS4 AS3
+      379: DESCARGAR_SUMINISTRO S26 ROVER1 AS3 ID76
+      380: MOVER ROVER0 AS3 AS4
+      381: MOVER ROVER0 AS4 AL6
+      382: CARGAR_SUMINISTRO S31 ROVER0 AL6
+      383: MOVER ROVER0 AL6 AS4
+      384: MOVER ROVER0 AS4 AS3
+      385: DESCARGAR_SUMINISTRO S31 ROVER0 AS3 ID81
+      386: MOVER ROVER1 AS3 AS4
+      387: MOVER ROVER1 AS4 AL6
+      388: CARGAR_SUMINISTRO S35 ROVER1 AL6
+      389: MOVER ROVER1 AL6 AS4
+      390: MOVER ROVER1 AS4 AS3
+      391: DESCARGAR_SUMINISTRO S35 ROVER1 AS3 ID85
      
 
-time spent:    0.00 seconds instantiating 56 easy, 0 hard action templates
-               0.00 seconds reachability analysis, yielding 22 facts and 36 actions
-               0.00 seconds creating final representation with 22 relevant facts, 12 relevant fluents
+time spent:    0.31 seconds instantiating 40628 easy, 0 hard action templates
+               0.62 seconds reachability analysis, yielding 512 facts and 428 actions
+               0.00 seconds creating final representation with 512 relevant facts, 13 relevant fluents
                0.00 seconds computing LNF
                0.00 seconds building connectivity graph
-               0.00 seconds searching, evaluating 46 states, to a max depth of 0
-               0.00 seconds total time
+              16.26 seconds searching, evaluating 28465 states, to a max depth of 0
+              17.19 seconds total time
 
 "

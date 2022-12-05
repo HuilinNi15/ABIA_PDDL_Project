@@ -14,6 +14,7 @@ class Problem():
         self.decre_comb = decre_comb
         self.val_comb = val_comb
         self.val_prio = val_prio
+        self.dict_prio = {}
 
     def __find_paths(self) -> dict:
         project_path = str(pathlib.Path().resolve())
@@ -51,6 +52,7 @@ class Problem():
             for i in range(suministros + personal):
                 priorities.append(f'id{i}')
                 priority = rand.randint(1, 3)
+                self.dict_prio[f'ID{i}'] = priority
                 init.append(f"= (Prioridad id{i}) {priority}")
             priorities.append('idpedido')
 
@@ -188,7 +190,7 @@ class Problem():
 
         elif self.level == 'Extension 3':
             lines += [
-                f'    (:metric minimize(CombustibleTotal))\n']
+                f'    (:metric minimize (+ (* {self.val_comb} (-(CombustibleTotal)))  (* {self.val_prio} (CombustibleTotal))   ) ) \n']
         lines += ['\n',
                   ')\n']
 
@@ -208,7 +210,7 @@ class Problem():
         with open(self.paths["output"], 'w') as f:
             f.writelines(str(output))
 
-    def read_output(self):
+    def read_output(self, combustible, prioridad):
         with open(self.paths['read_output']) as f:
             lines = f.readlines()
 
@@ -236,4 +238,16 @@ class Problem():
 
         result = [len(steps), times[6][0], times[0][3], times[0][5], times[1]
                   [5], times[1][8], times[2][6], times[2][9], times[5][4], times[5][11]]
+        if combustible:
+            count = 0
+            for line in steps:
+                count += line.count('MOVER')
+            result.append(count)
+
+        if prioridad:
+            count = 0
+            for line in steps:
+                if 'DESCARGAR_PERSONAL' in line:
+                    count += self.dict_prio[line[4]]
+            result.append(count)
         return steps, times, result
