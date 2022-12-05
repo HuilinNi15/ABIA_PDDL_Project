@@ -12,13 +12,16 @@ En cada una de estas carpetas se encuentra un archivo llamado "practica-prob-cus
 En estas carpetas también se encuentran algún archivo de prueba.
 
 
+-------------------------------------------------------------
 /Python : En está carpeta hay tres archivo:
   - Generator: Este archivo de python sirve para generar los ficheros de prueba y ejecutarlos.
   - Output.txt: Este archivo lo usamos para guardar el último output que hemos tenido.
   - Run.py: Es un archivo que sirve como ejemplo para llamar al archivo Generator.
-  
+ ------------------------------------------------------------
+ 
 maps_generator.py: Es un archivo que usamos como libería para generar mapas con unas distribuciones de bases concretas.
 
+--------------------------------------------------------------------------------------------------------------------
 
 experiments-"nombre de la extensión": Son una serie de archivos donde están los experimentos que hemos realizado.
 
