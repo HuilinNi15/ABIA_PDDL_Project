@@ -139,10 +139,9 @@ class Problem():
 
         if pedidos_adicionales:
             transportables = people[:-1] + supplies[:-1]
-            bases = warehouses[:-1] + settlements[:-1]
             for i in range(suministros + personal, suministros + personal + pedidos_adicionales):
                 transportable = random.choice(transportables)
-                base_pedido = random.choice(bases)
+                base_pedido = random.choice(settlements[:-1])
                 if self.level == 'Extension 3':  # -------------------------- EXTENSION 3
                     init.append(f'pedido {transportable} {base_pedido} id{i}')
                 else:
@@ -201,7 +200,7 @@ class Problem():
 
         elif self.level == 'Extension 3':
             lines += [
-                f'    (:metric minimize (+ (* {self.val_comb} (-(CombustibleTotal)))  (* {self.val_prio} (CombustibleTotal))   ) ) \n']
+                f'    (:metric maximize (+ (* {self.val_comb} (-(CombustibleTotal)))  (* {self.val_prio} (AcumPrioridad))   ) ) \n']
         lines += ['\n',
                   ')\n']
 
