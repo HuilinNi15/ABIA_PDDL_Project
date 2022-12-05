@@ -21,7 +21,7 @@
         (PersonalCargado ?r - rover)
         (SuministroCargado ?r - rover)
         (CombustibleRestante ?r - rover)
-        (CombustibleTotal)
+        (CombustibleTotalUtilizado)
         (DecrecimientoCombusitible)
         (p) ;capacidad máxima de personal por rover
         (s) ;capacidad máxima de suministro por rover
@@ -29,8 +29,7 @@
 
     (:action mover
         :parameters (?r - rover ?ori - base ?des - base)
-        :precondition (and (aparcado ?r ?ori) (conectado ?ori ?des) (> (CombustibleRestante ?r) 0)
-        )
+        :precondition (and (aparcado ?r ?ori) (conectado ?ori ?des) (> (CombustibleRestante ?r) 0))
         :effect (and
             (aparcado ?r ?des)
             (not (aparcado ?r ?ori))
@@ -38,7 +37,7 @@
                 (CombustibleRestante ?r)
                 (DecrecimientoCombusitible))
             (increase
-                (CombustibleTotal)
+                (CombustibleTotalUtilizado)
                 (DecrecimientoCombusitible))
         )
     )
@@ -48,8 +47,7 @@
         :precondition (and
             (en_base ?p ?a) (aparcado ?r ?a)
             (< (PersonalCargado ?r) (p))
-            (= (SuministroCargado ?r) 0)
-        )
+            (= (SuministroCargado ?r) 0))
         :effect (and
             (en_rover ?p ?r) (not (en_base ?p ?a))
             (increase (PersonalCargado ?r) 1)
@@ -61,8 +59,7 @@
         :precondition (and
             (en_base ?s ?a) (aparcado ?r ?a)
             (< (SuministroCargado ?r) (s))
-            (= (PersonalCargado ?r) 0)
-        )
+            (= (PersonalCargado ?r) 0))
         :effect (and
             (en_rover ?s ?r) (not (en_base ?s ?a))
             (increase (SuministroCargado ?r) 1)
